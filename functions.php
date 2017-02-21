@@ -15,6 +15,7 @@
 
 	// Custom image thumbnail size
 	add_image_size( 'news-thumb', 300, 300, true ); // (cropped)	
+	add_image_size( 'half-page', 480, 300, true ); // (cropped)	
 
 	// Excerpt settings and read more tag
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
@@ -24,6 +25,10 @@
 	}
 	function new_excerpt_more( $more ) {
 		return '...';
+	}
+
+	function excerpt($limit) {
+	    return wp_trim_words(get_the_excerpt(), $limit);
 	}
 
 	// Get specific pages by name
@@ -48,6 +53,20 @@
 			'after_title' => '',
 		) );
 	}
+
+	// Widget area in footer
+	add_action( 'widgets_init', 'events_widgets_init' );
+	function events_widgets_init() {
+		register_sidebar( array(
+			'name' => 'Events widget area',
+			'id' => 'events_widget',
+			'before_widget' => '',
+			'after_widget' => '',
+			'before_title' => '',
+			'after_title' => '',
+		) );
+	}
+
 
 	// Remove paragraph from images
 	add_filter('the_content', 'filter_ptags_on_images');
