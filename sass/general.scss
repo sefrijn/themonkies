@@ -1,0 +1,207 @@
+@import "base";
+@import "compass/css3";
+
+// Typography
+body{
+	font-family: 'Open Sans';
+	font-size:18px;
+	font-weight:300;
+}
+p{
+	font-family: 'Open Sans';
+	line-height:26px;
+	margin-bottom:15px;
+	margin-top:15px;
+	a{
+		font-weight: 400;
+		color:darken($highlight,14%);
+		&:hover{
+		}
+	}
+}
+h1,h2,h3{
+	font-family: 'Baloo';
+	font-weight:400;
+	@include font-smoothing();
+}
+h1{
+	font-size:40px;
+}
+h2{
+
+}
+h3{
+	font-size:24px;
+}
+a{
+	color:#333333;
+	font-weight:300;
+	text-decoration:none;
+	&:hover{
+		color:$highlight;
+	}
+}
+
+// SCROLL TO ANCHOR OFFSET
+a.anchor{
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
+
+// Limit width of container, looks nicer
+.container{
+	max-width:980px;
+}
+
+// Green default button style
+.button{
+	display:inline-block;
+	border:1px solid #ddd;
+	padding:10px 15px;
+	text-decoration: none;
+	&:hover{
+		background-color:$highlight;
+		color:white;
+		border-color:$highlight;
+		text-decoration: none;
+	}
+} 
+
+// Special font style
+.caps{
+	text-transform: uppercase;
+	font-size:13px;
+	letter-spacing:2px;
+	color:#aaaaaa;
+}
+
+// Vertical centering fix
+.vertical-center-wrapper{
+	display: table;
+	.vertical-center{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+// Clearfix
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+// Hover blur style
+.item-style-1{
+	position:relative;
+	.item-image-content{
+		// The content over the image
+		position:relative;
+		opacity:1;
+		z-index:1;
+		@include transition-duration(0.5s);
+	}
+	.item-image-wrapper{
+		// Wrapper of the image
+		position:absolute;
+		overflow:hidden;
+		.item-image, .item-image-blur{
+			// The actual image
+			// Gets blurred
+			position:absolute;
+			@include scale(1.1);
+			@include transition-duration(0.5s);
+			opacity: 1;
+		}
+		.item-image-blur{
+			@include filter(blur(8px));	
+		}
+	}
+	&:hover{
+		.item-image-wrapper{
+			.item-image{
+				opacity: 0;
+			}
+		}
+		.item-image-content{
+			opacity:1.0;
+		}
+		.button{
+			opacity: 0.5;
+			@include transition-duration(0.5s);			
+			&:hover{
+				opacity:1.0;
+				background:transparent;
+				border:1px solid #fff;
+				@include box-shadow(rgba(#fff,0.5) 0px 0px 5px);
+			}
+		}
+	}
+}
+
+
+.alignnone{
+	width:100%;
+	height:auto;
+}
+.alignleft{
+	width:45%;
+	height:auto;
+	margin-right:5%;
+}
+.alignright{
+	width:45%;
+	height:auto;
+	margin-left:5%;	
+}
+
+
+
+
+// OLD CSS
+// blockquote{
+// 	margin-top:30px;
+// 	border:1px solid #eeeeee;
+// 	padding:30px;
+// 	position:relative;
+// 	span{
+// 		font-family: 'Georgia';
+// 		position:absolute;
+// 		font-size:50px;		
+// 	}
+// 	span:nth-of-type(1){
+// 		left:150px;
+// 		top:30px;
+// 		}
+// 	span:nth-of-type(2){
+// 		bottom:30px;
+// 		right:150px;
+// 	}
+// }
+// blockquote + p em{
+// 	position: relative;
+// 	top:-28px;
+// 	text-transform: uppercase;
+// 	font-size:13px;
+// 	letter-spacing:2px;
+// 	color:#aaaaaa;
+// 	background-color:#ffffff;
+// 	padding:20px;	
+// }
+
+// .subtitle{
+// 	text-transform: uppercase;
+// 	font-size:13px;
+// 	letter-spacing:2px;
+// 	color:#aaaaaa;
+// 	line-height:20px;
+// }

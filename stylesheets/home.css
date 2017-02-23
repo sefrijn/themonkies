@@ -1,0 +1,261 @@
+/* line 6, ../sass/home.scss */
+#home h1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+/* line 13, ../sass/home.scss */
+#home #vision {
+  text-align: center;
+}
+/* line 16, ../sass/home.scss */
+#home #vision .vision-elements-wrapper {
+  margin: 0 -25px;
+}
+/* line 18, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element {
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 50%;
+  display: block;
+  float: left;
+}
+/* line 24, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-wrapper {
+  height: 250px;
+  top: 0px;
+  left: 10px;
+  right: 10px;
+}
+/* line 29, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image, #home #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image-blur {
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 35, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content {
+  padding: 0 10px;
+  min-height: 250px;
+  width: 100%;
+  text-align: center;
+}
+/* line 40, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 41, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center h2 {
+  font-size: 40px;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 49, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center .button {
+  display: inline-block;
+  color: #fff;
+}
+/* line 57, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center {
+  box-shadow: 0 4px 0 #4ebf3f;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 60, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2 {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+/* line 70, ../sass/home.scss */
+#home #vision .vision-read-more {
+  text-align: center;
+}
+/* line 72, ../sass/home.scss */
+#home #vision .vision-read-more a {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/* line 77, ../sass/home.scss */
+#home #vision .vision-read-more a:hover {
+  border-color: #4ebf3f;
+  background-color: #4ebf3f;
+  color: white;
+}
+/* line 87, ../sass/home.scss */
+#home #events {
+  margin-top: 30px;
+}
+/* line 89, ../sass/home.scss */
+#home #events a {
+  text-decoration: none;
+}
+/* line 91, ../sass/home.scss */
+#home #events a:hover {
+  color: #4ebf3f;
+}
+/* line 93, ../sass/home.scss */
+#home #events a:hover img.attachment-news-thumb {
+  box-shadow: 0 4px 0 #4ebf3f;
+}
+/* line 99, ../sass/home.scss */
+#home #events ul, #home #events li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 104, ../sass/home.scss */
+#home #events li {
+  margin-bottom: 20px;
+}
+/* line 107, ../sass/home.scss */
+#home #events img {
+  width: 138px;
+  height: 138px;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+/* line 114, ../sass/home.scss */
+#home #events h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+/* line 120, ../sass/home.scss */
+#home #events .tribe-event-duration, #home #events .tribe-events-venue-details {
+  font-size: 15px;
+}
+/* line 124, ../sass/home.scss */
+#home #events .tribe-events-widget-link a {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/* line 129, ../sass/home.scss */
+#home #events .tribe-events-widget-link a:hover {
+  background-color: #4ebf3f;
+  color: white;
+  border-color: #4ebf3f;
+}
+/* line 139, ../sass/home.scss */
+#home #blog {
+  margin-top: 30px;
+}
+/* line 141, ../sass/home.scss */
+#home #blog a.item {
+  text-decoration: none;
+}
+/* line 143, ../sass/home.scss */
+#home #blog a.item:hover {
+  color: #4ebf3f;
+}
+/* line 145, ../sass/home.scss */
+#home #blog a.item:hover img.attachment-news-thumb {
+  box-shadow: 0 4px 0 #4ebf3f;
+}
+/* line 151, ../sass/home.scss */
+#home #blog .item {
+  margin-bottom: 20px;
+}
+/* line 154, ../sass/home.scss */
+#home #blog img {
+  width: 138px;
+  height: 138px;
+  display: block;
+  float: left;
+  margin: 0;
+  margin-right: 20px;
+}
+/* line 161, ../sass/home.scss */
+#home #blog img.wp-user-avatar {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 170, ../sass/home.scss */
+#home #blog .author p {
+  line-height: 1.5;
+  margin: 0;
+  font-size: 15px;
+}
+/* line 175, ../sass/home.scss */
+#home #blog .author .date {
+  line-height: 1.0;
+}
+/* line 179, ../sass/home.scss */
+#home #blog h2 {
+  font-size: 21px;
+  margin-top: 0;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+/* line 189, ../sass/home.scss */
+#home #monkies .monkie {
+  text-decoration: none;
+}
+/* line 191, ../sass/home.scss */
+#home #monkies .monkie:hover {
+  color: #4ebf3f;
+}
+/* line 193, ../sass/home.scss */
+#home #monkies .monkie:hover img.attachment-news-thumb {
+  box-shadow: 0 4px 0 #4ebf3f;
+}
+/* line 199, ../sass/home.scss */
+#home #monkies h1, #home #monkies h2 {
+  text-align: center;
+}
+/* line 202, ../sass/home.scss */
+#home #monkies h2 {
+  font-size: 21px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+/* line 207, ../sass/home.scss */
+#home #monkies img {
+  width: 100%;
+  height: auto;
+}
+/* line 214, ../sass/home.scss */
+#home #location {
+  color: white;
+  padding: 100px 180px;
+  text-align: center;
+  margin-top: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/schiedam.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 226, ../sass/home.scss */
+#home #location a {
+  color: white;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/* line 233, ../sass/home.scss */
+#home #location a:hover {
+  background-color: #4ebf3f;
+  color: white;
+  border-color: #4ebf3f;
+}

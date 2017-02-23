@@ -25,8 +25,6 @@
 	<?php 
 	  if ( is_admin_bar_showing() ) echo '<style>.navigation{top:259px !important;} .fixed{top:32px !important;}</style>'; 
 	?>
-	<style>
-	</style>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">	
 </head>
@@ -38,7 +36,7 @@
 	<div class="navigation">
 		<?php wp_nav_menu(); ?>
 	</div>
-	<header>
+	<header class="wrapper">
 		<div class="container">
 			<a href="<?php echo get_site_url(); ?>">The Monkies</a>
 			<p>Creating a nice life on planet earth together.</p>

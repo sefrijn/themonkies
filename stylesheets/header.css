@@ -1,0 +1,30 @@
+/* line 6, ../sass/header.scss */
+header .container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding: 110px 0 28px;
+  margin: 0px auto 65px;
+}
+/* line 14, ../sass/header.scss */
+header .container a, header .container p {
+  color: white;
+}
+/* line 17, ../sass/header.scss */
+header .container a {
+  font-family: 'Baloo';
+  font-size: 70px;
+  margin-top: 20px;
+  line-height: 0.9;
+}
+/* line 23, ../sass/header.scss */
+header .container p {
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 23px;
+}

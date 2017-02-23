@@ -1,0 +1,29 @@
+@import "base";
+@import "compass/css3";
+
+// HEADER
+header{
+	.container{
+		background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../img/header.jpg");
+		background-position: center center;
+		background-repeat:no-repeat;
+		@include background-size(cover);
+		text-align:center;
+		padding:110px 0 28px;
+		margin:0px auto 65px;
+		a,p{
+			color:white;
+		}
+		a{
+			font-family: 'Baloo';
+			font-size:70px;
+			margin-top:20px;
+			line-height:0.9;
+		}
+		p{
+			max-width:500px;
+			margin:0px auto;
+			font-size:23px;
+		}	
+	}
+}

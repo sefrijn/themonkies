@@ -1,0 +1,82 @@
+@import "base";
+@import "compass/css3";
+
+.page-template-page-vision #vision{
+	h2{
+		text-align: center;
+	}
+
+	.vision-elements-wrapper{
+		margin:0 -25px;
+		.vision-element{
+			margin-bottom:20px;
+			text-decoration: none;
+			padding:0 10px;
+			// width:25%;
+			display:block;
+			// float:left;		
+			.item-image-wrapper{
+				height:200px;
+				top:0px;
+				margin:0;
+				left:10px;
+				right:10px;
+				.item-image, .item-image-blur{
+					top:0px;
+					bottom:0px;
+					width:100%;
+				}
+			}
+			.item-image-content{
+				padding:0;
+				min-height:200px;
+				width:100%;
+				text-align:center;
+				.vertical-center{
+					h2{
+						font-size:25px;
+						@include transition-duration(0.5s);
+					}
+					@include transition-duration(0.5s);
+					color:#fff;
+					background-color:rgba(0,0,0,0.3);				
+				}
+			}
+			&:hover{
+				.item-image-content{
+					.vertical-center{
+						box-shadow:0 4px 0 $highlight;
+						background-color:rgba(0,0,0,0.2);
+						h2{
+							@include scale(1.2);
+
+							// font-size:50px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.vision-detail{
+		margin-top:40px;
+		h1{
+			text-align: center;
+			color:white;
+			font-size:55px;
+		}
+		p{
+			font-size:16px;
+		}
+		.first-section{
+			padding:40px calc(16.67% + 10px);
+			p{
+				color:white;
+				font-size:21px;
+				font-weight: 400;
+				line-height: 1.5;
+				@include font-smoothing();
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+@import "base";
+@import "compass/css3";
+
+// NAVIGATION
+.navigation{
+	position:absolute;
+	top:227px;
+	width:100%;
+	ul{
+		margin-bottom:0px;
+		text-align:center;
+		li{
+			display:inline;
+			a{
+				display: inline-block;
+				padding: 20px;
+				color:#555555;
+				text-decoration: none;
+				&:hover{
+					background-color:$highlight;
+					color:white;
+				}
+			}
+		}
+		.current-menu-item{
+			a{
+				background-color:$highlight;
+				color:white;
+			}
+		}
+	}
+}
+.fixed{
+	position:fixed;
+	top:0px;
+	background-color: white;
+	z-index:10;
+}

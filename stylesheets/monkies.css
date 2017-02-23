@@ -1,0 +1,52 @@
+/* line 6, ../sass/monkies.scss */
+.page-template-page-monkies #monkies h2 {
+  text-align: center;
+}
+/* line 10, ../sass/monkies.scss */
+.page-template-page-monkies #monkies .monkie-item .monkie-image {
+  position: relative;
+}
+/* line 12, ../sass/monkies.scss */
+.page-template-page-monkies #monkies .monkie-item .monkie-image h3 {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 20px 5px 15px;
+  text-align: center;
+  font-size: 32px;
+}
+/* line 24, ../sass/monkies.scss */
+.page-template-page-monkies #monkies .monkie-item .monkie-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 28, ../sass/monkies.scss */
+.page-template-page-monkies #monkies .monkie-item .monkie-image .dashicons-external {
+  visibility: hidden;
+}
+/* line 32, ../sass/monkies.scss */
+.page-template-page-monkies #monkies .monkie-item p {
+  font-size: 15px;
+}
+/* line 36, ../sass/monkies.scss */
+.page-template-page-monkies #monkies a.monkie-image {
+  display: block;
+  text-decoration: none;
+}
+/* line 40, ../sass/monkies.scss */
+.page-template-page-monkies #monkies a.monkie-image:hover p {
+  color: #333333;
+}
+/* line 43, ../sass/monkies.scss */
+.page-template-page-monkies #monkies a.monkie-image:hover img {
+  box-shadow: 0 4px 0 #4ebf3f;
+}

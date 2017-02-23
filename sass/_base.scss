@@ -1,0 +1,9 @@
+// Variables
+$highlight: #4ebf3f;
+
+// Mixins
+@mixin font-smoothing() {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;	
+}

@@ -40,6 +40,7 @@ if ( $posts ) : ?>
 			setup_postdata( $post );
 			?>
 			<li class="tribe-events-list-widget-events <?php tribe_events_event_classes() ?>">
+			<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark">
 				<?php
 				if (
 					get_post_thumbnail_id( $post )
@@ -57,7 +58,7 @@ if ( $posts ) : ?>
 					$thumbnail_size = apply_filters( 'tribe_events_list_widget_thumbnail_size', 'news-thumb' );
 					?>
 					<div class="tribe-event-image">
-						<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbnail_size ); ?></a>
+						<?php the_post_thumbnail( $thumbnail_size ); ?>
 					</div>
 					<?php
 
@@ -70,9 +71,9 @@ if ( $posts ) : ?>
 
 				<?php do_action( 'tribe_events_list_widget_before_the_event_title' ); ?>
 				<!-- Event Title -->
-				<h4 class="tribe-event-title">
-					<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><?php the_title(); ?></a>
-				</h4>
+				<h3 class="tribe-event-title">
+					<?php the_title(); ?>
+				</h3>
 
 				<?php do_action( 'tribe_events_list_widget_after_the_event_title' ); ?>
 				<!-- Event Time -->
@@ -98,15 +99,16 @@ if ( $posts ) : ?>
 				<?php endif; ?>
 
 				<?php do_action( 'tribe_events_list_widget_after_the_meta' ) ?>
+			</a>
 			</li>
 		<?php
 		endforeach;
 		?>
 	</ul><!-- .tribe-list-widget -->
 
-	<p class="tribe-events-widget-link">
+	<div class="tribe-events-widget-link">
 		<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" rel="bookmark"><?php printf( esc_html__( 'View All %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
-	</p>
+	</div>
 
 <?php
 // No events were found.

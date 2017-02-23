@@ -1,0 +1,203 @@
+/* line 5, ../sass/general.scss */
+body {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 10, ../sass/general.scss */
+p {
+  font-family: 'Open Sans';
+  line-height: 26px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+/* line 15, ../sass/general.scss */
+p a {
+  font-weight: 400;
+  color: #38892d;
+}
+
+/* line 22, ../sass/general.scss */
+h1, h2, h3 {
+  font-family: 'Baloo';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+/* line 27, ../sass/general.scss */
+h1 {
+  font-size: 40px;
+}
+
+/* line 33, ../sass/general.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 36, ../sass/general.scss */
+a {
+  color: #333333;
+  font-weight: 300;
+  text-decoration: none;
+}
+/* line 40, ../sass/general.scss */
+a:hover {
+  color: #4ebf3f;
+}
+
+/* line 46, ../sass/general.scss */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
+
+/* line 55, ../sass/general.scss */
+.container {
+  max-width: 980px;
+}
+
+/* line 60, ../sass/general.scss */
+.button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/* line 65, ../sass/general.scss */
+.button:hover {
+  background-color: #4ebf3f;
+  color: white;
+  border-color: #4ebf3f;
+  text-decoration: none;
+}
+
+/* line 74, ../sass/general.scss */
+.caps {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+}
+
+/* line 82, ../sass/general.scss */
+.vertical-center-wrapper {
+  display: table;
+}
+/* line 84, ../sass/general.scss */
+.vertical-center-wrapper .vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 91, ../sass/general.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 99, ../sass/general.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 100, ../sass/general.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 101, ../sass/general.scss */
+.clearfix {
+  display: block;
+}
+
+/* line 104, ../sass/general.scss */
+.item-style-1 {
+  position: relative;
+}
+/* line 106, ../sass/general.scss */
+.item-style-1 .item-image-content {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 113, ../sass/general.scss */
+.item-style-1 .item-image-wrapper {
+  position: absolute;
+  overflow: hidden;
+}
+/* line 117, ../sass/general.scss */
+.item-style-1 .item-image-wrapper .item-image, .item-style-1 .item-image-wrapper .item-image-blur {
+  position: absolute;
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+/* line 125, ../sass/general.scss */
+.item-style-1 .item-image-wrapper .item-image-blur {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+}
+/* line 131, ../sass/general.scss */
+.item-style-1:hover .item-image-wrapper .item-image {
+  opacity: 0;
+}
+/* line 135, ../sass/general.scss */
+.item-style-1:hover .item-image-content {
+  opacity: 1.0;
+}
+/* line 138, ../sass/general.scss */
+.item-style-1:hover .button {
+  opacity: 0.5;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 141, ../sass/general.scss */
+.item-style-1:hover .button:hover {
+  opacity: 1.0;
+  background: transparent;
+  border: 1px solid #fff;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 5px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 5px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 5px;
+}
+
+/* line 152, ../sass/general.scss */
+.alignnone {
+  width: 100%;
+  height: auto;
+}
+
+/* line 156, ../sass/general.scss */
+.alignleft {
+  width: 45%;
+  height: auto;
+  margin-right: 5%;
+}
+
+/* line 161, ../sass/general.scss */
+.alignright {
+  width: 45%;
+  height: auto;
+  margin-left: 5%;
+}

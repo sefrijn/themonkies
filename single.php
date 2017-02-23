@@ -5,11 +5,11 @@
 
 	get_header('pages');
 ?>
-<div id="page">
+<div id="page" class="wrapper">
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if ( has_post_thumbnail() ) { ?>
-			<header style="<?php if ( has_post_thumbnail() ) { ?>
+			<header class="container" style="<?php if ( has_post_thumbnail() ) { ?>
 					<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
 					if ($post_image_id) {
 						$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
@@ -24,26 +24,32 @@
 					?>
 					<?php } ?>
 				">
+				<h3>blog</h3>
 				<h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
 				<p class="subtitle"><?php $meta_values = get_post_meta( get_the_ID(), 'subtitle', true ); 
 				_e($meta_values); ?></p>
-				<p class="subtitle"><?php the_date(); ?></p>
-				<a href="#" class="scroll_down"><img class="round" src="<?php echo get_template_directory_uri() ?>/img/arrow_down.png" alt=""></a>
+				<p class="subtitle">
+					<?php the_date(); ?><br>
+					by <?php the_author(); ?>	
+				</p>
 			</header>
 			<?php } else { ?>
-			<section class="spacer"></section>
 			<?php } ?>
 
 			<script>
 				$( document ).ready(function() {
-					$('.navigation ul li:nth-of-type(4)').addClass('current-menu-item');
+					$('.navigation ul li:nth-of-type(5)').addClass('current-menu-item');
 				});
 			</script>
 
 
 			<section class="wrapper">
 				<div class="container">
-					<?php the_content(); ?>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<?php the_content(); ?>					
+						</div>
+					</div>
 				</div>
 			</section>
 		<?php endwhile; ?>

@@ -1,0 +1,20 @@
+/* line 2, ../sass/page.scss */
+#page header {
+  margin-top: 0px;
+  text-align: center;
+  color: #ffffff;
+  padding: 55px 30px;
+}
+/* line 7, ../sass/page.scss */
+#page header h1 {
+  font-size: 80px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+/* line 12, ../sass/page.scss */
+#page header h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}

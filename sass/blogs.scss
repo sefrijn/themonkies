@@ -1,0 +1,70 @@
+@import "base";
+@import "compass/css3";
+
+// BLOGS OVERVIEW
+.page-template-page-blog #blog{
+	h2{
+		// font-size:26px;
+		text-align: center;
+	}
+	.row{
+		margin:0 -30px;
+	}
+	.blog-item{
+		.blog-image{
+			position: relative;
+			img{
+				width:100%;
+				height:auto;
+			}
+			.author{
+				@include background-image(linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)));
+				color:white;
+				position:absolute;
+				bottom:0px;
+				left:0px;
+				right:0px;
+				padding:10px;
+				font-size:16px;
+				line-height: 1.0;
+				p{
+					margin:0;
+				}
+				.date{
+					padding-top:10px;
+				}
+	 			.wp-user-avatar{
+		 			margin:0;
+		 			margin-right:20px;
+		 			display: block;
+		 			float:left;
+	 				width:75px;
+	 				height:75px;
+	 				// margin-top:-4px;
+	 				margin-right:10px;
+	 				@include border-radius(40px);
+	 			}
+			}
+		}
+		&:hover{
+			text-decoration: none;
+			.blog-image{
+				box-shadow:0 4px 0 $highlight;				
+			}			
+		}
+
+	}
+}
+
+
+// SINGLE BLOG
+.single-post{
+	#page{
+		header{
+			padding:55px 100px;
+			h1{
+				font-size:50px;
+			}
+		}		
+	}
+}

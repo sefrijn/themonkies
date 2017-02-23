@@ -33,21 +33,7 @@
 			<section class="spacer"></section>
 			<?php } ?>
 
-			<?php 
-				$parent_title = get_the_title($post->post_parent);
-				$projects = 0;
-				if($parent_title == 'Projects'){
-					$projects = 1;
-				}
-			?>
-			<script>
-				$( document ).ready(function() {
-					var parent = <?php echo $projects;?>;
-					if(parent == 1){
-						$('.navigation ul li:first-of-type').addClass('current-menu-item');
-					}
-				});
-			</script>
+
 			<section class="wrapper">
 				<div class="container">
 					<?php the_content(); ?>
