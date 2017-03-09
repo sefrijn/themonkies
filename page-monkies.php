@@ -1,6 +1,5 @@
 <?php
-/**
- * @package Sefrijn
+/*
  * Template Name: Monkies
  */
 
@@ -19,7 +18,7 @@
 	  			setup_postdata($post); ?>
 	  				<?php $counter++; ?>
 					<?php $website = get_post_meta(get_the_ID(), 'website', true ); ?>
-					<div class="col-md-4 monkie-item">
+					<div class="col-md-3 monkie-item">
 						<?php if ( ! empty( $website ) ) { ?>
 							<a class="monkie-image" href="http://<?php echo $website; ?>">
 						<?php }else{ ?>
@@ -28,16 +27,20 @@
 					  			<?php if ( has_post_thumbnail() ) { ?>
 					  				<?php echo get_the_post_thumbnail( get_the_ID(), 'news-thumb'); ?>
 								<?php } ?>
-					  			<h3><?php the_title(); ?><span class="dashicons dashicons-external"></span></h3>
+					  			<h3><?php the_title(); ?></h3>
 						<?php if ( ! empty( $website ) ) { ?>
+								<span class="dashicons dashicons-external"></span>
 							</a>
 						<?php }else{ ?>
 							</div>
 						<?php } ?>					  			
-			  			<p class="intro"><?php the_content(); ?></p>
+			  			<p class="intro"><?php the_excerpt(20); ?></p>
+						<?php if ( ! empty( $website ) ) { ?>
+							<a class="monkie-image" href="http://<?php echo $website; ?>"><?php echo $website; ?></a>
+						<?php } ?>			  			
 					</div>
 
-					<?php if($counter % 3 == 0){
+					<?php if($counter % 4 == 0){
 						echo '</div><div class="row">';
 					} ?>
 	  		<?php endforeach;

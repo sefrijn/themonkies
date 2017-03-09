@@ -1,13 +1,3 @@
-/*
-Theme Name: Sefrijn
-Theme URI: http://www.sefrijn.nl/
-Author: Sefrijn
-Author URI: http://www.sefrijn.nl/
-Description:Custom made theme for my portfolio site.
-Version: 1.1
-
-*/
-@import url("bootstrap.min.css");
 @import url("loader.css");
 @import url("general.css");
 @import url("header.css");

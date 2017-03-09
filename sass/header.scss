@@ -4,6 +4,7 @@
 // HEADER
 header{
 	.container{
+		position:relative;
 		background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../img/header.jpg");
 		background-position: center center;
 		background-repeat:no-repeat;
@@ -25,5 +26,38 @@ header{
 			margin:0px auto;
 			font-size:23px;
 		}	
+	}
+}
+
+// Language switch
+#lang{
+	position:absolute;
+	top:0px;
+	right:0px;
+	a{
+		font-size:16px;
+		font-family: 'Open Sans';
+		color:white;
+		border:none;
+		background-color:rgba(0,0,0,0.7);
+		margin:0;
+		text-decoration: none;
+		&:hover{
+			background-color:$highlight;
+		}
+	}
+	.dropdown-menu{
+		background-color:rgba(0,0,0,0.7);
+		margin:0;
+		padding:0;
+		a{
+			background-color:transparent;
+			padding:12px 20px;
+			font-family: 'Open Sans';
+			color:white;
+			&:hover{
+				background-color:$highlight;
+			}
+		}
 	}
 }

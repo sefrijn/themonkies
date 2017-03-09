@@ -1,5 +1,6 @@
 /* line 6, ../sass/header.scss */
 header .container {
+  position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/header.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -11,20 +12,58 @@ header .container {
   padding: 110px 0 28px;
   margin: 0px auto 65px;
 }
-/* line 14, ../sass/header.scss */
+/* line 15, ../sass/header.scss */
 header .container a, header .container p {
   color: white;
 }
-/* line 17, ../sass/header.scss */
+/* line 18, ../sass/header.scss */
 header .container a {
   font-family: 'Baloo';
   font-size: 70px;
   margin-top: 20px;
   line-height: 0.9;
 }
-/* line 23, ../sass/header.scss */
+/* line 24, ../sass/header.scss */
 header .container p {
   max-width: 500px;
   margin: 0px auto;
   font-size: 23px;
+}
+
+/* line 33, ../sass/header.scss */
+#lang {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/* line 37, ../sass/header.scss */
+#lang a {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  text-decoration: none;
+}
+/* line 45, ../sass/header.scss */
+#lang a:hover {
+  background-color: #4ebf3f;
+}
+/* line 49, ../sass/header.scss */
+#lang .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+}
+/* line 53, ../sass/header.scss */
+#lang .dropdown-menu a {
+  background-color: transparent;
+  padding: 12px 20px;
+  font-family: 'Open Sans';
+  color: white;
+}
+/* line 58, ../sass/header.scss */
+#lang .dropdown-menu a:hover {
+  background-color: #4ebf3f;
 }

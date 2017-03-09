@@ -1,4 +1,11 @@
 <?php
+	// Language
+	add_action( 'after_setup_theme', 'setup' );
+
+	function setup() {
+		load_theme_textdomain('themonkies', get_template_directory());
+	}
+
 	// Thumbnail image
 	add_theme_support( 'post-thumbnails' );
 

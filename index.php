@@ -1,24 +1,26 @@
-<?php
-/**
- * @package Sefrijn
- */
-
-	get_header();
-?>
+<?php get_header(); ?>
 
 <div id="home" class="wrapper">
+
 
 <!-- VISION -->
 
 	<div id="vision" class="container">
-		<h1>what do we do?</h1>
+		<h1><?php _e('wat doen we?', 'themonkies') ?></h1>
 		<div class="vision-elements-wrapper">
-			<?php 
-				$page_ID = get_ID_by_slug('Vision');
-				$childpages = query_posts('orderby=menu_order&order=asc&post_type=page&post_parent='.$page_ID);
-				if($childpages){ /* display the children content  */
-		  		foreach ($childpages as $post) :
-		  			setup_postdata($post); ?>
+			<?php
+				// Get the Vision child pages
+				$page_ID = get_ID_by_slug('visie');			
+				$args=array(
+				  'post_type' => 'page',
+				  'post_status' => 'publish',
+				  'post_parent' => $page_ID,
+				  'order' => 'ASC',
+				  'orderby' => 'menu'
+				  );
+				$my_query = new WP_Query($args);
+				if( $my_query->have_posts() ) {
+					while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 						<a class="vision-element item-style-1" href="<?php echo get_home_url().'/vision#'.$post->post_name; ?>">
 							<div class="item-image-content vertical-center-wrapper">
 								<div class="vertical-center">
@@ -51,8 +53,9 @@
 								</div>
 							</div>
 						</a>
-		  		<?php endforeach;
-				} 
+						<?php 
+					endwhile;
+				}
 			?>
 		</div>
 		<div class="vision-read-more">
@@ -74,21 +77,33 @@
 
 			<div id="blog" class="col-md-6">
 				<h1>blog</h1>
-				<?php while ( have_posts() ) : the_post(); ?>
-					<a href="<?php echo get_the_permalink(); ?>" class="item clearfix">
-						<?php if ( has_post_thumbnail() ) {
-							the_post_thumbnail('news-thumb');
-						} ?>				
-						<h2><?php the_title(); ?></h2>
-						<div class="author">
-							<?php echo get_wp_user_avatar(get_the_author_meta('ID'), 50); ?>
-							<p class="date"><?php echo get_the_date('M j, Y'); ?></p>
-							<p><?php echo get_the_author(); ?></p>
-						</div>
-						<?php // the_excerpt(); ?>
-					</a>
-				<?php endwhile; ?>
-				<a href="#" class="button">View All</a>		
+				<?php
+					// Get the blogs
+					$args=array(
+					  'post_type' => 'post',
+					  'post_status' => 'publish',
+					  'posts_per_page' => 3,
+					  'order' => 'DESC'
+					  );
+					$my_query = new WP_Query($args);
+					if( $my_query->have_posts() ) {
+						while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+							<a href="<?php echo get_the_permalink(); ?>" class="item clearfix">
+								<?php if ( has_post_thumbnail() ) {
+									the_post_thumbnail('news-thumb');
+								} ?>				
+								<h2><?php the_title(); ?></h2>
+								<div class="author">
+									<?php echo get_wp_user_avatar(get_the_author_meta('ID'), 50); ?>
+									<p class="date"><?php echo get_the_date('M j, Y'); ?></p>
+									<p><?php echo get_the_author(); ?></p>
+								</div>
+							</a>
+							<?php 
+						endwhile;
+					}
+				?>
+				<a href="#" class="button"><?php echo __("Bekijk Alles") ?></a>		
 			</div>
 		</div>
 	</div>
@@ -97,8 +112,9 @@
 
 	<div id="monkies" class="container">
 		<div class="row">
-			<h1>meet the monkies</h1>
+			<h1><?php echo __("onze lieve monkies"); ?></h1>
 			<?php
+				// Get the monkie child pages
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
@@ -106,29 +122,26 @@
 				  'posts_per_page' => 5,
 				  'order' => 'ASC'
 				  );
-				$my_query = null;
 				$my_query = new WP_Query($args);
-				if( $my_query->have_posts() ) { ?>
-					<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				if( $my_query->have_posts() ) {
+					while ($my_query->have_posts()) : $my_query->the_post(); ?>
 						<a href="<?php echo get_the_permalink(); ?>" class="col-md-2 monkie">
 							<?php if ( has_post_thumbnail() ) {
 								the_post_thumbnail('news-thumb');
 							} ?>			
 							<div class="content">
 								<h2><?php the_title(); ?></h2>
-								<p><?php echo excerpt(20); ?></p>
 							</div>
 						</a>
 						<?php
-					endwhile; ?>
-					<?php
+					endwhile;
 				}else{
 					echo "no content";
 				}
 			?>
 			<div class="col-md-2">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/more_monkies_small.jpg" alt="">
-				<h2>And more!</h2>
+				<h2>En meer!</h2>
 			</div>
 		</div>
 	</div>
@@ -136,7 +149,7 @@
 <!-- LOCATION -->
 
 	<div id="location" class="container">
-		<h1>come and visit us</h1>
+		<h1><?php echo __("bezoek ons!") ?></h1>
 		<p>The Monkies have a beautiful place in the city centre of Schiedam. One of their main locations for their events, with a beautiful meditation room.</p>
 		<a href="#">Read More</a>
 	</div>

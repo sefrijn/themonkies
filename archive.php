@@ -1,7 +1,6 @@
 <?php
 /**
- * @package Sefrijn
- * Template Name: News
+ * Template Name: Archive
  */
 
 	get_header();

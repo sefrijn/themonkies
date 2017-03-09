@@ -1,12 +1,14 @@
 @import "base";
 @import "compass/css3";
 
+// ALL MONKIES
 .page-template-page-monkies #monkies{
 	// text-align:center;
 	h2{
 		text-align: center;
 	}
 	.monkie-item{
+		margin-bottom:40px;
 		.monkie-image{
 			position:relative;
 			h3{
@@ -27,6 +29,12 @@
 			}
 			.dashicons-external{
 				visibility: hidden;
+				position: absolute;
+				font-size:30px;
+				height:30px;
+				width:30px;
+				right:20px;
+				bottom:19px;
 			}
 		}
 		p{
@@ -43,6 +51,13 @@
 			img{
 				box-shadow:0 4px 0 $highlight;				
 			}
+			.dashicons-external{
+				visibility: visible;
+				color:white;
+			}
+
 		}
 	}
 }
+
+// SINGLE MONKIE

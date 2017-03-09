@@ -1,6 +1,5 @@
 <?php
-/**
- * @package Sefrijn
+/*
  * Template Name: Blog
  */
 

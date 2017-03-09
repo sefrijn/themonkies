@@ -1,6 +1,5 @@
 <?php
-/**
- * @package Sefrijn
+/*
  * Template Name: Vision
  */
 
@@ -12,7 +11,7 @@
 
 		<div class="vision-elements-wrapper row">
 			<?php 
-				$page_ID = get_ID_by_slug('Vision');
+				$page_ID = get_ID_by_slug('visie');
 				$childpages = query_posts('orderby=menu_order&order=asc&post_type=page&post_parent='.$page_ID);
 				if($childpages){ /* display the children content  */
 		  		foreach ($childpages as $post) :
@@ -54,7 +53,7 @@
 		</div>
 	</div>
 	<?php 
-	$page_ID = get_ID_by_slug('Vision');
+	$page_ID = get_ID_by_slug('visie');
 	$childpages = query_posts('orderby=menu_order&order=asc&post_type=page&post_parent='.$page_ID);
 	if($childpages){ /* display the children content  */
 		foreach ($childpages as $post) :

@@ -1,17 +1,7 @@
-/*
-Theme Name: Sefrijn
-Theme URI: http://www.sefrijn.nl/
-Author: Sefrijn
-Author URI: http://www.sefrijn.nl/
-Description:Custom made theme for my portfolio site.
-Version: 1.1
-
-*/
-
 @import "base";
 @import "compass/css3";
 
-@import url("bootstrap.min.css");	// Bootstrap
+// @import url("bootstrap.min.css");	// Bootstrap
 @import url("loader.css"); // special loading icon, delete maybe
 
 @import url("general.css");			// General (Filters, hover styles, loading)

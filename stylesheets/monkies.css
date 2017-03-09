@@ -1,12 +1,16 @@
-/* line 6, ../sass/monkies.scss */
+/* line 7, ../sass/monkies.scss */
 .page-template-page-monkies #monkies h2 {
   text-align: center;
 }
 /* line 10, ../sass/monkies.scss */
+.page-template-page-monkies #monkies .monkie-item {
+  margin-bottom: 40px;
+}
+/* line 12, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item .monkie-image {
   position: relative;
 }
-/* line 12, ../sass/monkies.scss */
+/* line 14, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item .monkie-image h3 {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -24,29 +28,40 @@
   text-align: center;
   font-size: 32px;
 }
-/* line 24, ../sass/monkies.scss */
+/* line 26, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item .monkie-image img {
   width: 100%;
   height: auto;
 }
-/* line 28, ../sass/monkies.scss */
+/* line 30, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item .monkie-image .dashicons-external {
   visibility: hidden;
+  position: absolute;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  right: 20px;
+  bottom: 19px;
 }
-/* line 32, ../sass/monkies.scss */
+/* line 40, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item p {
   font-size: 15px;
 }
-/* line 36, ../sass/monkies.scss */
+/* line 44, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image {
   display: block;
   text-decoration: none;
 }
-/* line 40, ../sass/monkies.scss */
+/* line 48, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover p {
   color: #333333;
 }
-/* line 43, ../sass/monkies.scss */
+/* line 51, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover img {
   box-shadow: 0 4px 0 #4ebf3f;
+}
+/* line 54, ../sass/monkies.scss */
+.page-template-page-monkies #monkies a.monkie-image:hover .dashicons-external {
+  visibility: visible;
+  color: white;
 }
