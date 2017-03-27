@@ -31,4 +31,4 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php include('navigation.php'); ?>
+<?php include('includes/navigation.php'); ?>

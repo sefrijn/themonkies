@@ -1,12 +1,14 @@
 @import "base";
 @import "compass/css3";
 
-// @import url("bootstrap.min.css");	// Bootstrap
-@import url("loader.css"); // special loading icon, delete maybe
+// @import url("bootstrap.min.css");// Bootstrap
+@import url("loader.css"); 			// special loading icon, delete maybe
+
 
 @import url("general.css");			// General (Filters, hover styles, loading)
 @import url("header.css");			// Header
 @import url("navigation.css");		// Navigation
+@import url("menu.css");			// Menu button CSS
 @import url("footer.css");			// Footer
 @import url("home.css");			// Home
 @import url("page.css");			// Single page
@@ -14,6 +16,7 @@
 @import url("blogs.css");			// Blogs
 @import url("vision.css");			// Vision
 @import url("monkies.css");			// Monkies
+@import url("activities.css");		// Activities
 
 
 

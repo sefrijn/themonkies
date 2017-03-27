@@ -7,7 +7,7 @@
 ?>
 <div id="monkies" class="wrapper">
 	<div class="container">
-	<h2>meet the people</h2>
+	<h2>dit zijn de monkies</h2>
 		<div class="row">
 			<?php 
 			$counter = 0;
@@ -18,25 +18,19 @@
 	  			setup_postdata($post); ?>
 	  				<?php $counter++; ?>
 					<?php $website = get_post_meta(get_the_ID(), 'website', true ); ?>
-					<div class="col-md-3 monkie-item">
+					<div class="col-md-3 col-sm-3 col-xs-6 monkie-item">
+						<a class="monkie-image" href="<?php echo get_the_permalink(); ?>">
+				  			<?php if ( has_post_thumbnail() ) { ?>
+				  				<?php echo get_the_post_thumbnail( get_the_ID(), 'news-thumb'); ?>
+							<?php } ?>
+							<div class="title">
+				  				<h3><?php the_title(); ?></h3>
+				  				<p class="location">&nbsp;<?php echo get_post_meta(get_the_ID(), 'location', true );?></p>
+				  			</div>
+						</a>
+			  			<p class="intro"><?php echo excerpt(15); ?></p>
 						<?php if ( ! empty( $website ) ) { ?>
-							<a class="monkie-image" href="http://<?php echo $website; ?>">
-						<?php }else{ ?>
-							<div class="monkie-image" href="http://<?php echo $website; ?>">
-						<?php } ?>
-					  			<?php if ( has_post_thumbnail() ) { ?>
-					  				<?php echo get_the_post_thumbnail( get_the_ID(), 'news-thumb'); ?>
-								<?php } ?>
-					  			<h3><?php the_title(); ?></h3>
-						<?php if ( ! empty( $website ) ) { ?>
-								<span class="dashicons dashicons-external"></span>
-							</a>
-						<?php }else{ ?>
-							</div>
-						<?php } ?>					  			
-			  			<p class="intro"><?php the_excerpt(20); ?></p>
-						<?php if ( ! empty( $website ) ) { ?>
-							<a class="monkie-image" href="http://<?php echo $website; ?>"><?php echo $website; ?></a>
+							<a class="intro" href="http://<?php echo $website; ?>"><?php echo $website; ?></a>
 						<?php } ?>			  			
 					</div>
 

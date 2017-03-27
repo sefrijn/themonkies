@@ -1,14 +1,14 @@
 @import "base";
 @import "compass/css3";
 
-.page-template-page-vision #vision{
+.page-template-page-activities #activities{
 	h2{
 		text-align: center;
 	}
 
-	.vision-elements-wrapper{
+	.activities-elements-wrapper{
 		margin:0 -30px;
-		.vision-element{
+		.activities-element{
 			margin-bottom:20px;
 			text-decoration: none;
 			// padding:0 10px;
@@ -35,6 +35,7 @@
 				.vertical-center{
 					h2{
 						font-size:25px;
+						padding:0 10%;
 						@include transition-duration(0.5s);
 					}
 					@include transition-duration(0.5s);
@@ -58,7 +59,7 @@
 		}
 	}
 
-	.vision-detail{
+	.activities-detail{
 		margin-top:40px;
 		.image{
 			margin-bottom:10px;

@@ -56,11 +56,6 @@ a.anchor {
   visibility: hidden;
 }
 
-/* line 55, ../sass/general.scss */
-.container {
-  max-width: 980px;
-}
-
 /* line 60, ../sass/general.scss */
 .button {
   display: inline-block;

@@ -1,0 +1,123 @@
+/* line 7, ../sass/menu.scss */
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 11, ../sass/menu.scss */
+  .menu-wrapper {
+    display: block;
+    left: -100%;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  /* line 26, ../sass/menu.scss */
+  .menuicon {
+    z-index: 20;
+    display: inline-block;
+    cursor: pointer;
+    height: 19px;
+    width: 25px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  /* line 42, ../sass/menu.scss */
+  .menuicon span {
+    display: block;
+    top: 8px;
+    width: 25px;
+    height: 3px;
+    background-color: #ddd;
+    position: relative;
+    -webkit-transition-duration: 0;
+    -moz-transition-duration: 0;
+    -ms-transition-duration: 0;
+    -o-transition-duration: 0;
+    transition-duration: 0;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  /* line 59, ../sass/menu.scss */
+  .menuicon span::after, .menuicon span::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #ddd;
+    -webkit-transition-property: margin, -webkit-transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0;
+    -moz-transition-delay: 0.2s, 0;
+    -ms-transition-delay: 0.2s, 0;
+    -o-transition-delay: 0.2s, 0;
+    transition-delay: 0.2s, 0;
+  }
+  /* line 78, ../sass/menu.scss */
+  .menuicon span::before {
+    margin-top: -8px;
+  }
+  /* line 81, ../sass/menu.scss */
+  .menuicon span::after {
+    margin-top: 8px;
+  }
+
+  /* line 87, ../sass/menu.scss */
+  #hamburger:checked ~ .menu-wrapper {
+    left: 0px;
+  }
+
+  /* line 93, ../sass/menu.scss */
+  #hamburger:checked ~ .menuicon span {
+    background-color: transparent;
+  }
+  /* line 95, ../sass/menu.scss */
+  #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after {
+    margin-top: 0px;
+    -webkit-transition-delay: 0, 0.2s;
+    -moz-transition-delay: 0, 0.2s;
+    -ms-transition-delay: 0, 0.2s;
+    -o-transition-delay: 0, 0.2s;
+    transition-delay: 0, 0.2s;
+  }
+  /* line 103, ../sass/menu.scss */
+  #hamburger:checked ~ .menuicon span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* line 110, ../sass/menu.scss */
+  #hamburger:checked ~ .menuicon span::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}

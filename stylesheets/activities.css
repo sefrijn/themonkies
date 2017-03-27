@@ -1,0 +1,102 @@
+/* line 5, ../sass/activities.scss */
+.page-template-page-activities #activities h2 {
+  text-align: center;
+}
+/* line 9, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper {
+  margin: 0 -30px;
+}
+/* line 11, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element {
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: block;
+}
+/* line 18, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-wrapper {
+  height: 200px;
+  top: 0px;
+  margin: 0;
+  left: 15px;
+  right: 15px;
+}
+/* line 24, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-wrapper .item-image, .page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-wrapper .item-image-blur {
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 30, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-content {
+  padding: 0;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+/* line 35, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-content .vertical-center {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 36, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-content .vertical-center h2 {
+  font-size: 25px;
+  padding: 0 10%;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 48, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element:hover .item-image-content .vertical-center {
+  box-shadow: 0 4px 0 #4ebf3f;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 51, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-elements-wrapper .activities-element:hover .item-image-content .vertical-center h2 {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+/* line 62, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-detail {
+  margin-top: 40px;
+}
+/* line 64, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-detail .image {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  /* line 64, ../sass/activities.scss */
+  .page-template-page-activities #activities .activities-detail .image {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/* line 70, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-detail .image div {
+  height: 300px;
+}
+/* line 77, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-detail h1 {
+  text-align: center;
+  font-size: 55px;
+}
+/* line 82, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-detail p {
+  font-size: 16px;
+}
+/* line 87, ../sass/activities.scss */
+.page-template-page-activities #activities .activities-detail .first-section p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}

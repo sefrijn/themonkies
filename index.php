@@ -4,24 +4,25 @@
 
 
 <!-- VISION -->
-
 	<div id="vision" class="container">
-		<h1><?php _e('wat doen we?', 'themonkies') ?></h1>
-		<div class="vision-elements-wrapper">
+		<h1><?php _e('onze thema&apos;s', 'themonkies') ?></h1>
+		<div class="vision-elements-wrapper row">
 			<?php
 				// Get the Vision child pages
-				$page_ID = get_ID_by_slug('visie');			
+				$page_ID = get_ID_by_slug('visie');
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
 				  'post_parent' => $page_ID,
 				  'order' => 'ASC',
-				  'orderby' => 'menu'
+				  'orderby' => 'menu_order'
 				  );
+				$post_parent = get_post($page_ID); 
+				$slug = $post_parent->post_name;
 				$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
 					while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-						<a class="vision-element item-style-1" href="<?php echo get_home_url().'/vision#'.$post->post_name; ?>">
+						<a class="vision-element col-lg-4 col-md-4 col-sm-4 item-style-1" href="<?php echo get_home_url().'/'.$slug.'#'.$post->post_name; ?>">
 							<div class="item-image-content vertical-center-wrapper">
 								<div class="vertical-center">
 						  			<h2><?php the_title(); ?></h2>	
@@ -59,11 +60,75 @@
 			?>
 		</div>
 		<div class="vision-read-more">
-			<a href="#">Read more about our vision</a>
+			<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('Lees meer over onze visie') ?></a>
 		</div>	
 	</div>
 
-	<div class="container">
+<!-- ACTIVITIES -->
+	<div id="activities" class="container">
+		<h1><?php _e('wat doen we?', 'themonkies') ?></h1>
+		<div class="activities-elements-wrapper row">
+			<?php
+				// Get the activities child pages
+				$page_ID = get_ID_by_slug('activiteiten');
+				$args=array(
+				  'post_type' => 'page',
+				  'post_status' => 'publish',
+				  'post_parent' => $page_ID,
+				  'order' => 'ASC',
+				  'orderby' => 'menu_order',
+				  'posts_per_page' => '4'
+				  );
+				$post_parent = get_post($page_ID); 
+				$slug = $post_parent->post_name;
+				$my_query = new WP_Query($args);
+				if( $my_query->have_posts() ) {
+					while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+						<a class="activities-element col-lg-3 col-md-3 col-sm-4 col-xs-6 item-style-1" href="<?php echo get_the_permalink(); ?>">
+							<div class="item-image-content vertical-center-wrapper">
+								<div class="vertical-center">
+						  			<h2><?php the_title(); ?></h2>	
+						  			<p class="subtitle"><?php echo get_post_field( 'subtitle', get_the_ID(), true) ?></p>
+								</div>
+							</div>
+							<div class="item-image-wrapper">
+								<div class="item-image-blur" style="
+									<?php if ( has_post_thumbnail($page->ID) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+										if ($post_image_id) {
+											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
+											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+										}
+										echo 'background:url(\''.$thumbnail.'\') no-repeat center center;background-size:cover;'; ?>
+										<?php } ?>
+									">
+								</div>
+								<div class="item-image" style="
+									<?php if ( has_post_thumbnail($page->ID) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+										if ($post_image_id) {
+											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
+											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+										}
+										echo 'background:url(\''.$thumbnail.'\') no-repeat center center;background-size:cover;'; ?>
+										<?php } ?>
+									">
+								</div>
+							</div>
+						</a>
+						<?php 
+					endwhile;
+				}
+			?>
+		</div>
+		<div class="activities-read-more">
+			<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('Bekijk wat wij doen') ?></a>
+		</div>	
+	</div>
+
+
+
+	<div class="container" id="events-blog">
 		<div class="row">
 
 <!-- EVENTS -->
@@ -91,13 +156,10 @@
 							<a href="<?php echo get_the_permalink(); ?>" class="item clearfix">
 								<?php if ( has_post_thumbnail() ) {
 									the_post_thumbnail('news-thumb');
-								} ?>				
+								} ?>
+								<p class="date"><?php echo get_the_date('j F'); ?></p>				
 								<h2><?php the_title(); ?></h2>
-								<div class="author">
-									<?php echo get_wp_user_avatar(get_the_author_meta('ID'), 50); ?>
-									<p class="date"><?php echo get_the_date('M j, Y'); ?></p>
-									<p><?php echo get_the_author(); ?></p>
-								</div>
+								<p class="excerpt"><?php echo excerpt(25); ?></p>
 							</a>
 							<?php 
 						endwhile;
@@ -125,7 +187,7 @@
 				$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
 					while ($my_query->have_posts()) : $my_query->the_post(); ?>
-						<a href="<?php echo get_the_permalink(); ?>" class="col-md-2 monkie">
+						<a href="<?php echo get_the_permalink(); ?>" class="col-md-2 col-sm-4 col-xs-6 monkie">
 							<?php if ( has_post_thumbnail() ) {
 								the_post_thumbnail('news-thumb');
 							} ?>			
@@ -139,10 +201,15 @@
 					echo "no content";
 				}
 			?>
-			<div class="col-md-2">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/more_monkies_small.jpg" alt="">
+			<?php
+				$page_ID = get_ID_by_slug('monkies');
+				$post_url = get_permalink($page_ID);
+			?>
+
+			<a class="col-md-2 col-sm-4 col-xs-6 monkie" href="<?php echo $post_url; ?>">
+				<img class="attachment-news-thumb" src="<?php echo get_template_directory_uri(); ?>/img/more_monkies_small.jpg" alt="">
 				<h2>En meer!</h2>
-			</div>
+			</a>
 		</div>
 	</div>
 
@@ -150,8 +217,9 @@
 
 	<div id="location" class="container">
 		<h1><?php echo __("bezoek ons!") ?></h1>
-		<p>The Monkies have a beautiful place in the city centre of Schiedam. One of their main locations for their events, with a beautiful meditation room.</p>
-		<a href="#">Read More</a>
+		<p><?php _e('The Monkies kan je vinden op verschillende locaties. Onze hoofdlocatie zit op dit moment in Schiedam, waar we mooie activtietein organiseren in een prachtig pand.') ?></p>
+		<?php $page_ID = get_ID_by_slug('locaties'); ?>
+		<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('Lees meer') ?></a>
 	</div>
 </div>
 <?php get_footer() ?>

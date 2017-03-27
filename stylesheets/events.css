@@ -85,7 +85,7 @@
 /* line 86, ../sass/events.scss */
 .single-tribe_events .menu-item-type-custom a {
   background-color: #4ebf3f;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 /* line 91, ../sass/events.scss */
 .single-tribe_events .tribe-events-event-meta:first-child {

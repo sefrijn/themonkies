@@ -5,43 +5,42 @@
   font-size: 25px;
 }
 /* line 13, ../sass/home.scss */
-#home #vision {
+#home #vision, #home #activities {
   text-align: center;
+  overflow: hidden;
 }
-/* line 16, ../sass/home.scss */
-#home #vision .vision-elements-wrapper {
-  margin: 0 -25px;
+/* line 17, ../sass/home.scss */
+#home #vision .vision-elements-wrapper, #home #vision .activities-elements-wrapper, #home #activities .vision-elements-wrapper, #home #activities .activities-elements-wrapper {
+  margin: 0 -30px;
 }
-/* line 18, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element {
+/* line 19, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element, #home #vision .vision-elements-wrapper .activities-element, #home #vision .activities-elements-wrapper .vision-element, #home #vision .activities-elements-wrapper .activities-element, #home #activities .vision-elements-wrapper .vision-element, #home #activities .vision-elements-wrapper .activities-element, #home #activities .activities-elements-wrapper .vision-element, #home #activities .activities-elements-wrapper .activities-element {
   margin-bottom: 20px;
   text-decoration: none;
-  width: 50%;
   display: block;
-  float: left;
 }
-/* line 24, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element .item-image-wrapper {
+/* line 25, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-wrapper, #home #vision .vision-elements-wrapper .activities-element .item-image-wrapper, #home #vision .activities-elements-wrapper .vision-element .item-image-wrapper, #home #vision .activities-elements-wrapper .activities-element .item-image-wrapper, #home #activities .vision-elements-wrapper .vision-element .item-image-wrapper, #home #activities .vision-elements-wrapper .activities-element .item-image-wrapper, #home #activities .activities-elements-wrapper .vision-element .item-image-wrapper, #home #activities .activities-elements-wrapper .activities-element .item-image-wrapper {
   height: 250px;
   top: 0px;
-  left: 10px;
-  right: 10px;
+  left: 15px;
+  right: 15px;
 }
-/* line 29, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image, #home #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image-blur {
+/* line 30, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image, #home #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image-blur, #home #vision .vision-elements-wrapper .activities-element .item-image-wrapper .item-image, #home #vision .vision-elements-wrapper .activities-element .item-image-wrapper .item-image-blur, #home #vision .activities-elements-wrapper .vision-element .item-image-wrapper .item-image, #home #vision .activities-elements-wrapper .vision-element .item-image-wrapper .item-image-blur, #home #vision .activities-elements-wrapper .activities-element .item-image-wrapper .item-image, #home #vision .activities-elements-wrapper .activities-element .item-image-wrapper .item-image-blur, #home #activities .vision-elements-wrapper .vision-element .item-image-wrapper .item-image, #home #activities .vision-elements-wrapper .vision-element .item-image-wrapper .item-image-blur, #home #activities .vision-elements-wrapper .activities-element .item-image-wrapper .item-image, #home #activities .vision-elements-wrapper .activities-element .item-image-wrapper .item-image-blur, #home #activities .activities-elements-wrapper .vision-element .item-image-wrapper .item-image, #home #activities .activities-elements-wrapper .vision-element .item-image-wrapper .item-image-blur, #home #activities .activities-elements-wrapper .activities-element .item-image-wrapper .item-image, #home #activities .activities-elements-wrapper .activities-element .item-image-wrapper .item-image-blur {
   top: 0px;
   bottom: 0px;
   width: 100%;
 }
-/* line 35, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element .item-image-content {
-  padding: 0 10px;
+/* line 36, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content, #home #vision .vision-elements-wrapper .activities-element .item-image-content, #home #vision .activities-elements-wrapper .vision-element .item-image-content, #home #vision .activities-elements-wrapper .activities-element .item-image-content, #home #activities .vision-elements-wrapper .vision-element .item-image-content, #home #activities .vision-elements-wrapper .activities-element .item-image-content, #home #activities .activities-elements-wrapper .vision-element .item-image-content, #home #activities .activities-elements-wrapper .activities-element .item-image-content {
+  padding: 0;
   min-height: 250px;
   width: 100%;
   text-align: center;
 }
-/* line 40, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center {
+/* line 41, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center, #home #vision .vision-elements-wrapper .activities-element .item-image-content .vertical-center, #home #vision .activities-elements-wrapper .vision-element .item-image-content .vertical-center, #home #vision .activities-elements-wrapper .activities-element .item-image-content .vertical-center, #home #activities .vision-elements-wrapper .vision-element .item-image-content .vertical-center, #home #activities .vision-elements-wrapper .activities-element .item-image-content .vertical-center, #home #activities .activities-elements-wrapper .vision-element .item-image-content .vertical-center, #home #activities .activities-elements-wrapper .activities-element .item-image-content .vertical-center {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
@@ -49,75 +48,95 @@
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 41, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center h2 {
-  font-size: 40px;
+/* line 42, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center h2, #home #vision .vision-elements-wrapper .activities-element .item-image-content .vertical-center h2, #home #vision .activities-elements-wrapper .vision-element .item-image-content .vertical-center h2, #home #vision .activities-elements-wrapper .activities-element .item-image-content .vertical-center h2, #home #activities .vision-elements-wrapper .vision-element .item-image-content .vertical-center h2, #home #activities .vision-elements-wrapper .activities-element .item-image-content .vertical-center h2, #home #activities .activities-elements-wrapper .vision-element .item-image-content .vertical-center h2, #home #activities .activities-elements-wrapper .activities-element .item-image-content .vertical-center h2 {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 /* line 49, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center .button {
+#home #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center .button, #home #vision .vision-elements-wrapper .activities-element .item-image-content .vertical-center .button, #home #vision .activities-elements-wrapper .vision-element .item-image-content .vertical-center .button, #home #vision .activities-elements-wrapper .activities-element .item-image-content .vertical-center .button, #home #activities .vision-elements-wrapper .vision-element .item-image-content .vertical-center .button, #home #activities .vision-elements-wrapper .activities-element .item-image-content .vertical-center .button, #home #activities .activities-elements-wrapper .vision-element .item-image-content .vertical-center .button, #home #activities .activities-elements-wrapper .activities-element .item-image-content .vertical-center .button {
   display: inline-block;
   color: #fff;
 }
 /* line 57, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center {
+#home #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center, #home #vision .vision-elements-wrapper .activities-element:hover .item-image-content .vertical-center, #home #vision .activities-elements-wrapper .vision-element:hover .item-image-content .vertical-center, #home #vision .activities-elements-wrapper .activities-element:hover .item-image-content .vertical-center, #home #activities .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center, #home #activities .vision-elements-wrapper .activities-element:hover .item-image-content .vertical-center, #home #activities .activities-elements-wrapper .vision-element:hover .item-image-content .vertical-center, #home #activities .activities-elements-wrapper .activities-element:hover .item-image-content .vertical-center {
   box-shadow: 0 4px 0 #4ebf3f;
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* line 60, ../sass/home.scss */
-#home #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2 {
+#home #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2, #home #vision .vision-elements-wrapper .activities-element:hover .item-image-content .vertical-center h2, #home #vision .activities-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2, #home #vision .activities-elements-wrapper .activities-element:hover .item-image-content .vertical-center h2, #home #activities .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2, #home #activities .vision-elements-wrapper .activities-element:hover .item-image-content .vertical-center h2, #home #activities .activities-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2, #home #activities .activities-elements-wrapper .activities-element:hover .item-image-content .vertical-center h2 {
   -moz-transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
-/* line 70, ../sass/home.scss */
-#home #vision .vision-read-more {
+/* line 69, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .vision-element h2, #home #vision .activities-elements-wrapper .vision-element h2, #home #activities .vision-elements-wrapper .vision-element h2, #home #activities .activities-elements-wrapper .vision-element h2 {
+  font-size: 40px;
+  padding: 0 8%;
+}
+/* line 73, ../sass/home.scss */
+#home #vision .vision-elements-wrapper .activities-element h2, #home #vision .activities-elements-wrapper .activities-element h2, #home #activities .vision-elements-wrapper .activities-element h2, #home #activities .activities-elements-wrapper .activities-element h2 {
+  font-size: 25px;
+  padding: 0 12%;
+}
+/* line 78, ../sass/home.scss */
+#home #vision .vision-read-more, #home #vision .activities-read-more, #home #activities .vision-read-more, #home #activities .activities-read-more {
   text-align: center;
 }
-/* line 72, ../sass/home.scss */
-#home #vision .vision-read-more a {
+/* line 80, ../sass/home.scss */
+#home #vision .vision-read-more a, #home #vision .activities-read-more a, #home #activities .vision-read-more a, #home #activities .activities-read-more a {
   display: inline-block;
   border: 1px solid #ddd;
   padding: 10px 15px;
   text-decoration: none;
 }
-/* line 77, ../sass/home.scss */
-#home #vision .vision-read-more a:hover {
+/* line 85, ../sass/home.scss */
+#home #vision .vision-read-more a:hover, #home #vision .activities-read-more a:hover, #home #activities .vision-read-more a:hover, #home #activities .activities-read-more a:hover {
   border-color: #4ebf3f;
   background-color: #4ebf3f;
   color: white;
 }
-/* line 87, ../sass/home.scss */
-#home #events {
-  margin-top: 30px;
+/* line 93, ../sass/home.scss */
+#home #activities {
+  margin-top: 40px;
 }
-/* line 89, ../sass/home.scss */
+/* line 98, ../sass/home.scss */
+#home #events-blog {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  /* line 101, ../sass/home.scss */
+  #home #events-blog .row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+/* line 110, ../sass/home.scss */
 #home #events a {
   text-decoration: none;
 }
-/* line 91, ../sass/home.scss */
+/* line 112, ../sass/home.scss */
 #home #events a:hover {
   color: #4ebf3f;
 }
-/* line 93, ../sass/home.scss */
+/* line 114, ../sass/home.scss */
 #home #events a:hover img.attachment-news-thumb {
   box-shadow: 0 4px 0 #4ebf3f;
 }
-/* line 99, ../sass/home.scss */
+/* line 120, ../sass/home.scss */
 #home #events ul, #home #events li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 104, ../sass/home.scss */
+/* line 125, ../sass/home.scss */
 #home #events li {
   margin-bottom: 20px;
 }
-/* line 107, ../sass/home.scss */
+/* line 128, ../sass/home.scss */
 #home #events img {
   width: 138px;
   height: 138px;
@@ -125,52 +144,47 @@
   float: left;
   margin-right: 20px;
 }
-/* line 114, ../sass/home.scss */
+/* line 135, ../sass/home.scss */
 #home #events h3 {
   margin: 0 0 12px;
   font-size: 21px;
   font-family: 'Open Sans';
   font-weight: 400;
 }
-/* line 120, ../sass/home.scss */
+/* line 141, ../sass/home.scss */
 #home #events .tribe-event-duration, #home #events .tribe-events-venue-details {
   font-size: 15px;
 }
-/* line 124, ../sass/home.scss */
+/* line 145, ../sass/home.scss */
 #home #events .tribe-events-widget-link a {
   display: inline-block;
   border: 1px solid #ddd;
   padding: 10px 15px;
   text-decoration: none;
 }
-/* line 129, ../sass/home.scss */
+/* line 150, ../sass/home.scss */
 #home #events .tribe-events-widget-link a:hover {
   background-color: #4ebf3f;
   color: white;
   border-color: #4ebf3f;
 }
-/* line 139, ../sass/home.scss */
-#home #blog {
-  margin-top: 30px;
-}
-/* line 141, ../sass/home.scss */
-#home #blog a.item {
+/* line 161, ../sass/home.scss */
+#home #blog .item {
   text-decoration: none;
+  margin-bottom: 20px;
+  position: relative;
+  min-height: 138px;
 }
-/* line 143, ../sass/home.scss */
-#home #blog a.item:hover {
+/* line 166, ../sass/home.scss */
+#home #blog .item:hover {
   color: #4ebf3f;
 }
-/* line 145, ../sass/home.scss */
-#home #blog a.item:hover img.attachment-news-thumb {
+/* line 168, ../sass/home.scss */
+#home #blog .item:hover img.attachment-news-thumb {
   box-shadow: 0 4px 0 #4ebf3f;
 }
-/* line 151, ../sass/home.scss */
-#home #blog .item {
-  margin-bottom: 20px;
-}
-/* line 154, ../sass/home.scss */
-#home #blog img {
+/* line 172, ../sass/home.scss */
+#home #blog .item img {
   width: 138px;
   height: 138px;
   display: block;
@@ -178,8 +192,8 @@
   margin: 0;
   margin-right: 20px;
 }
-/* line 161, ../sass/home.scss */
-#home #blog img.wp-user-avatar {
+/* line 179, ../sass/home.scss */
+#home #blog .item img.wp-user-avatar {
   width: 35px;
   height: 35px;
   margin-right: 10px;
@@ -187,54 +201,81 @@
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 170, ../sass/home.scss */
-#home #blog .author p {
-  line-height: 1.5;
+/* line 187, ../sass/home.scss */
+#home #blog .item .date {
+  position: absolute;
+  width: 138px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  bottom: 0px;
+  text-align: center;
+  left: 0px;
+  line-height: 1.0;
+  padding: 7px 10px;
   margin: 0;
+  color: white;
   font-size: 15px;
 }
-/* line 175, ../sass/home.scss */
-#home #blog .author .date {
-  line-height: 1.0;
-}
-/* line 179, ../sass/home.scss */
-#home #blog h2 {
+/* line 200, ../sass/home.scss */
+#home #blog .item h2 {
   font-size: 21px;
   margin-top: 0;
   font-family: 'Open Sans';
   font-weight: 400;
 }
-/* line 189, ../sass/home.scss */
+/* line 207, ../sass/home.scss */
+#home #blog .item p.excerpt {
+  font-size: 15px;
+  line-height: 1.6em;
+  padding-left: 158px;
+}
+/* line 216, ../sass/home.scss */
+#home #monkies {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  /* line 219, ../sass/home.scss */
+  #home #monkies .row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+/* line 224, ../sass/home.scss */
 #home #monkies .monkie {
+  display: block;
   text-decoration: none;
 }
-/* line 191, ../sass/home.scss */
+/* line 227, ../sass/home.scss */
 #home #monkies .monkie:hover {
   color: #4ebf3f;
 }
-/* line 193, ../sass/home.scss */
+/* line 229, ../sass/home.scss */
 #home #monkies .monkie:hover img.attachment-news-thumb {
   box-shadow: 0 4px 0 #4ebf3f;
 }
-/* line 199, ../sass/home.scss */
+/* line 235, ../sass/home.scss */
 #home #monkies h1, #home #monkies h2 {
   text-align: center;
 }
-/* line 202, ../sass/home.scss */
+/* line 238, ../sass/home.scss */
 #home #monkies h2 {
   font-size: 21px;
   font-family: 'Open Sans';
   font-weight: 400;
 }
-/* line 207, ../sass/home.scss */
+/* line 243, ../sass/home.scss */
 #home #monkies img {
   width: 100%;
   height: auto;
 }
-/* line 214, ../sass/home.scss */
+/* line 250, ../sass/home.scss */
 #home #location {
   color: white;
-  padding: 100px 180px;
+  padding: 100px 25%;
   text-align: center;
   margin-top: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/schiedam.jpg");
@@ -245,7 +286,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 226, ../sass/home.scss */
+/* line 262, ../sass/home.scss */
 #home #location a {
   color: white;
   display: inline-block;
@@ -253,9 +294,15 @@
   padding: 10px 15px;
   text-decoration: none;
 }
-/* line 233, ../sass/home.scss */
+/* line 269, ../sass/home.scss */
 #home #location a:hover {
   background-color: #4ebf3f;
   color: white;
   border-color: #4ebf3f;
+}
+/* line 276, ../sass/home.scss */
+#home p {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 300;
 }
