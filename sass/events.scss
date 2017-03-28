@@ -3,21 +3,28 @@
 
 
 // EVENTS ALL
-.events-list{
+.events-list #page{
 	.tribe-events-page-title{
 		text-transform: lowercase;
 		margin-top:30px;
 	}
 	.event-image{
-		padding:0 20px 0 0;
+		@media screen and (min-width: 768px){		
+			padding:0 20px 0 0;
+		}
 		position:relative;
 		.date{
 			text-decoration: none;
 			display: block;
 			position:absolute;
 			top:0;
-			left:0;
-			right:20px;
+			left:15px;
+			right:15px;
+			@media screen and (min-width: 768px){		
+				left:0;
+				right:20px;
+			}
+
 			margin-top:0;
 			@include background-image(linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0)));
 			color:white;
@@ -43,6 +50,9 @@
 
 	h2{
 		margin:0 0 15px;
+		@media screen and (max-width: 767px){
+			margin:10px 0 0;
+		}		
 		a{
 			font-family: 'Open Sans';
 		}

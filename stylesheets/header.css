@@ -1,5 +1,6 @@
 /* line 6, ../sass/header.scss */
-header .container {
+header .container.site-header {
+  height: 227px;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/header.jpg");
   background-position: center center;
@@ -12,31 +13,43 @@ header .container {
   padding: 110px 0 28px;
   margin: 0px auto 65px;
 }
-/* line 15, ../sass/header.scss */
-header .container a, header .container p {
+/* line 16, ../sass/header.scss */
+header .container.site-header a, header .container.site-header p {
   color: white;
 }
-/* line 18, ../sass/header.scss */
-header .container a {
+/* line 19, ../sass/header.scss */
+header .container.site-header a {
   font-family: 'Baloo';
   font-size: 70px;
   margin-top: 20px;
   line-height: 0.9;
 }
-/* line 24, ../sass/header.scss */
-header .container p {
-  max-width: 500px;
+@media screen and (max-width: 767px) {
+  /* line 19, ../sass/header.scss */
+  header .container.site-header a {
+    font-size: 40px;
+  }
+}
+/* line 29, ../sass/header.scss */
+header .container.site-header p {
+  padding: 0 15%;
   margin: 0px auto;
   font-size: 23px;
 }
+@media screen and (max-width: 767px) {
+  /* line 29, ../sass/header.scss */
+  header .container.site-header p {
+    font-size: 19px;
+  }
+}
 
-/* line 33, ../sass/header.scss */
+/* line 41, ../sass/header.scss */
 #lang {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-/* line 37, ../sass/header.scss */
+/* line 45, ../sass/header.scss */
 #lang a {
   font-size: 16px;
   font-family: 'Open Sans';
@@ -46,24 +59,24 @@ header .container p {
   margin: 0;
   text-decoration: none;
 }
-/* line 45, ../sass/header.scss */
+/* line 53, ../sass/header.scss */
 #lang a:hover {
   background-color: #4ebf3f;
 }
-/* line 49, ../sass/header.scss */
+/* line 57, ../sass/header.scss */
 #lang .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.7);
   margin: 0;
   padding: 0;
 }
-/* line 53, ../sass/header.scss */
+/* line 61, ../sass/header.scss */
 #lang .dropdown-menu a {
   background-color: transparent;
   padding: 12px 20px;
   font-family: 'Open Sans';
   color: white;
 }
-/* line 58, ../sass/header.scss */
+/* line 66, ../sass/header.scss */
 #lang .dropdown-menu a:hover {
   background-color: #4ebf3f;
 }

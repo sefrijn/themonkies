@@ -7,7 +7,7 @@
 ?>
 <div id="monkies" class="wrapper">
 	<div class="container">
-	<h2>dit zijn de monkies</h2>
+	<h2 class="page-title">dit zijn de monkies</h2>
 		<div class="row">
 			<?php 
 			$counter = 0;

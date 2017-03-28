@@ -24,15 +24,15 @@
 									<?php } ?>
 								">
 							</header>				
-							<h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
-							<p class="subtitle"><?php $meta_values = get_post_meta( get_the_ID(), 'subtitle', true ); 
-								_e($meta_values); ?></p>
 						</div>
 					</div>
 				<?php } ?>			
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 col-xs-9 col-xs-offset-1">
+						<h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
 						<?php the_content(); ?>
+						<?php $website = get_post_meta(get_the_ID(), 'website', true ); ?>
+						<a class="website" href="http://<?php echo $website; ?>"><?php echo $website; ?></a>
 					</div>			
 				</div>
 			<?php endwhile; ?>

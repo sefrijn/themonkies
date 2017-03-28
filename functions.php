@@ -9,6 +9,28 @@
 	// Thumbnail image
 	add_theme_support( 'post-thumbnails' );
 
+	// // Images in the_content
+	// function filter_images($content){
+	// 	$replace = 
+	// 		'	</div>
+	// 			<div class="col-lg-6 col-md-6">
+	// 				<img class="alignleft \1 />
+	// 			</div>
+	// 			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">';
+
+	// 		// '	</div>
+	// 		// </div>
+	// 		// <div class="row">
+	// 		// 	<div class="col-lg-6 col-md-6">
+	// 		// 		<img class="alignleft \1 />
+	// 		// 	</div>
+	// 		// </div>
+	// 		// <div class="row">
+	// 		// 	<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">';
+	//     return preg_replace('/<img class="\w*alignleft(.*) \/>\s*/iU', $replace, $content);
+	// }
+	// add_filter('the_content', 'filter_images');
+
 	// Menu's
 	add_action( 'init', 'register_my_menus' );
 	function register_my_menus() {

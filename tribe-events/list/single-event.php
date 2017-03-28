@@ -24,14 +24,14 @@ $organizer = tribe_get_organizer();
 
 ?>
 <!-- Event Image -->
-<div class="col-md-4 col-md-offset-1 event-image">
+<div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 event-image">
 	<?php echo tribe_event_featured_image( null, 'half-page' ) ?>
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="date">
 		<?php echo tribe_get_start_date($post, false, $format = 'j F' ); ?>
 	</a>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-6 col-xs-12 ">
 	
 	<!-- Event Title -->
 	<?php do_action( 'tribe_events_before_the_event_title' ) ?>

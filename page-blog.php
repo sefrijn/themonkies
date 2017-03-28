@@ -7,7 +7,7 @@
 ?>
 <div id="blog" class="wrapper">
 	<div class="container">
-	<h2>blogs</h2>
+	<h2 class="page-title">blogs</h2>
 		<div class="row">
 			<?php 
 			$counter = 0;
@@ -23,7 +23,7 @@
 						<?php } ?>
 						<div class="author">
 							<?php echo get_wp_user_avatar(get_the_author_meta('ID'), 'thumbnail'); ?>
-							<p class="date"><?php echo get_the_date('M j, Y'); ?></p>
+							<p class="date"><?php echo get_the_date('j F Y'); ?></p>
 							<p><?php echo get_the_author(); ?></p>
 						</div>		  			
 					</div>

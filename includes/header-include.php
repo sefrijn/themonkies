@@ -2,6 +2,7 @@
 <meta name="og:title" content="The Monkies">
 <meta name="keywords" content="Meditation,Yoga,Creativity,Community,Connection,Social,Buddhism,Schiedam,Rotterdam">
 <meta name="author" content="Sefrijn">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/type.js"></script>

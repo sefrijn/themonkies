@@ -9,9 +9,10 @@ $animationDuration: .3s;
 	position:absolute;
 	top:227px;
 	width:100%;
-	min-height:65px;
-	background-color:white;
+	min-height:62px;
 	.container{
+		background-color: white;
+		box-shadow:0 15px 15px -10px rgba(0,0,0,0.05);
 		.logo{
 			visibility: hidden;
 			display: inline-block;
@@ -106,7 +107,8 @@ $animationDuration: .3s;
 			.menu-wrapper{
 				padding-left:15px;
 				position:absolute;
-				top:50px;
+				top:46px;
+				// padding-top:0;
 				background-color:white;
 				left:-100%;
 				width:100%;
@@ -128,7 +130,6 @@ $animationDuration: .3s;
 .fixed{
 	position:fixed;
 	top:0px;
-	background-color: white;
 	z-index:10;
 	text-align: left;
 	.container{
@@ -159,4 +160,20 @@ $animationDuration: .3s;
 			display: none;
 		}		
 	}
+}
+
+// Fix for blogs
+.single-post .current-menu-item{
+	a{
+		background-color:transparent !important;
+		color:#555555 !important;
+		&:hover{
+			background-color:$highlight;
+			color:white;
+		}		
+	}	
+}
+.single-post .current-menu-item ~ li a{
+	background-color:$highlight;
+	color:white !important;
 }

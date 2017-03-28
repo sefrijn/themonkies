@@ -32,3 +32,4 @@
 
 <body <?php body_class(); ?>>
 <?php include('includes/navigation.php'); ?>
+<?php include('includes/header-tag.php'); ?>

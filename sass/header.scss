@@ -3,7 +3,8 @@
 
 // HEADER
 header{
-	.container{
+	.container.site-header{
+		height:227px;
 		position:relative;
 		background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../img/header.jpg");
 		background-position: center center;
@@ -20,11 +21,18 @@ header{
 			font-size:70px;
 			margin-top:20px;
 			line-height:0.9;
+			@media screen and (max-width: 767px){
+				font-size:40px;
+			}
 		}
+
 		p{
-			max-width:500px;
+			padding:0 15%;
 			margin:0px auto;
 			font-size:23px;
+			@media screen and (max-width: 767px){
+				font-size:19px;
+			}			
 		}	
 	}
 }

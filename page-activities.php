@@ -7,7 +7,7 @@
 ?>
 <div id="activities" class="wrapper">
 	<div id="activities-overview" class="container">
-		<h2>wat we doen</h2>
+		<h2 class="page-title">wat we doen</h2>
 
 		<div class="activities-elements-wrapper row">
 			<?php
@@ -23,7 +23,7 @@
 				$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
 					while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-						<a class="activities-element col-md-4 col-sm-6 col-xs-6 item-style-1" href="<?php echo get_the_permalink(); ?>">
+						<a class="activities-element col-md-4 col-sm-6 col-xs-12 item-style-1" href="<?php echo get_the_permalink(); ?>">
 							<div class="item-image-content vertical-center-wrapper">
 								<div class="vertical-center">
 						  			<h2><?php the_title(); ?></h2>	

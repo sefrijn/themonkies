@@ -1,18 +1,18 @@
 <?php
 /*
- * Template Name: Vision
+ * Template Name: Locations
  */
 
 	get_header('pages');
 ?>
-<div id="vision" class="wrapper">
-	<div id="vision-overview" class="container">
-		<h2 class="page-title">onze visie</h2>
+<div id="locations" class="wrapper">
+	<div id="locations-overview" class="container">
+		<h2 class="page-title">onze locaties</h2>
 
-		<div class="vision-elements-wrapper row">
+		<div class="locations-elements-wrapper row">
 			<?php
-				// Get the Vision child pages
-				$page_ID = get_ID_by_slug('visie');
+				// Get the locations child pages
+				$page_ID = get_ID_by_slug('locaties');
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
@@ -23,10 +23,14 @@
 				$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
 					while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-						<a class="vision-element col-md-4 col-sm-4 item-style-1" href="<?php echo '#'.$post->post_name; ?>">
+						<a class="locations-element col-md-4 col-sm-4 item-style-1" href="<?php echo '#'.$post->post_name; ?>">
 							<div class="item-image-content vertical-center-wrapper">
 								<div class="vertical-center">
-						  			<h2><?php the_title(); ?></h2>	
+						  			<h2>
+						  				<?php the_title(); ?>
+						  				<br><span class="subtitle"><?php echo get_post_meta(get_the_ID(), 'subtitle', true ); ?></span>		
+						  			</h2>
+
 								</div>
 							</div>
 							<div class="item-image-wrapper">
@@ -63,7 +67,7 @@
 	<?php 
 		if( $my_query->have_posts() ) {
 			while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-				<div class="vision-detail container">
+				<div class="locations-detail container">
 					<a class="anchor" id="<?php echo $post->post_name; ?>"></a>
 						<h1><?php the_title(); ?></h1>
 						<div class="row image">

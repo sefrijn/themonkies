@@ -44,13 +44,14 @@
   margin: 0;
   margin-top: -6px;
   color: white;
+  letter-spacing: 2px;
 }
-/* line 39, ../sass/monkies.scss */
+/* line 40, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item .monkie-image img {
   width: 100%;
   height: auto;
 }
-/* line 43, ../sass/monkies.scss */
+/* line 44, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item .monkie-image .dashicons-external {
   visibility: hidden;
   position: absolute;
@@ -60,58 +61,63 @@
   right: 20px;
   bottom: 19px;
 }
-/* line 53, ../sass/monkies.scss */
+/* line 54, ../sass/monkies.scss */
 .page-template-page-monkies #monkies .monkie-item p {
   font-size: 15px;
 }
 @media screen and (max-width: 991px) {
-  /* line 57, ../sass/monkies.scss */
+  /* line 58, ../sass/monkies.scss */
   .page-template-page-monkies #monkies .monkie-item .intro {
     display: none;
   }
-  /* line 60, ../sass/monkies.scss */
+  /* line 61, ../sass/monkies.scss */
   .page-template-page-monkies #monkies .monkie-item .location {
     display: none;
   }
-  /* line 63, ../sass/monkies.scss */
+  /* line 64, ../sass/monkies.scss */
   .page-template-page-monkies #monkies .monkie-item .monkie-image .title h3 {
     font-size: 25px;
     margin: 0;
   }
 }
-/* line 69, ../sass/monkies.scss */
+/* line 70, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image {
   display: block;
   text-decoration: none;
 }
-/* line 73, ../sass/monkies.scss */
+/* line 74, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover p {
   color: #333333;
 }
-/* line 76, ../sass/monkies.scss */
+/* line 77, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover img {
   box-shadow: 0 4px 0 #4ebf3f;
 }
-/* line 79, ../sass/monkies.scss */
+/* line 80, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover .dashicons-external {
   visibility: visible;
   color: white;
 }
 
-/* line 90, ../sass/monkies.scss */
+/* line 91, ../sass/monkies.scss */
 #page.monkie-single header {
-  margin-top: 30px;
+  margin-top: 0px;
   min-height: 300px;
 }
 @media screen and (min-width: 768px) {
-  /* line 90, ../sass/monkies.scss */
+  /* line 91, ../sass/monkies.scss */
   #page.monkie-single header {
     min-height: 400px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 90, ../sass/monkies.scss */
+  /* line 91, ../sass/monkies.scss */
   #page.monkie-single header {
     min-height: 460px;
   }
+}
+/* line 101, ../sass/monkies.scss */
+#page.monkie-single .website {
+  font-size: 21px;
+  color: #4ebf3f;
 }

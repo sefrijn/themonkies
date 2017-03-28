@@ -30,6 +30,10 @@ h1{
 h2{
 
 }
+h2.page-title{
+	margin:16px 0;
+	font-size:30px;
+}
 h3{
 	font-size:24px;
 }
@@ -154,39 +158,55 @@ a.anchor{
 	height:auto;
 }
 .alignleft{
-	width:45%;
-	height:auto;
-	margin-right:5%;
+	width:100%;
+    height: auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	@media screen and (min-width: 992px){
+	    float: left;
+	    width: calc( 100% + 15px);
+	    margin-left: calc( -50% - 30px);
+	}
+	// margin-right:5%;
 }
 .alignright{
-	width:45%;
-	height:auto;
-	margin-left:5%;	
+	width:100%;
+    height: auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	@media screen and (min-width: 992px){	
+	    float: right;
+	    width: calc( 100% + 15px);
+	    margin-right: calc( -50% - 30px);
+	}
+	// width:45%;
+	// height:auto;
+	// margin-left:5%;	
 }
 
 
 
 
 // OLD CSS
-// blockquote{
-// 	margin-top:30px;
-// 	border:1px solid #eeeeee;
-// 	padding:30px;
-// 	position:relative;
-// 	span{
-// 		font-family: 'Georgia';
-// 		position:absolute;
-// 		font-size:50px;		
-// 	}
-// 	span:nth-of-type(1){
-// 		left:150px;
-// 		top:30px;
-// 		}
-// 	span:nth-of-type(2){
-// 		bottom:30px;
-// 		right:150px;
-// 	}
-// }
+blockquote{
+	margin-bottom:15px;
+	padding:0;
+	// border:1px solid #eeeeee;
+	// padding:30px;
+	border:none;
+	position:relative;
+	p{
+		display: inline-block;
+		margin:0px 20px;
+	}
+	span{
+		line-height: 1.0;
+		font-family: 'Georgia';
+		font-size:40px;		
+		position:relative;
+		top:10px;
+	}
+}
 // blockquote + p em{
 // 	position: relative;
 // 	top:-28px;

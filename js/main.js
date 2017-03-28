@@ -47,7 +47,8 @@ $( document ).ready(function() {
 		console.log();
 	    if ($(this).scrollTop() > 227) {
 	        $( ".navigation").addClass('fixed');
-	    } else {
+	    }
+	    if ($(this).scrollTop() < 227) {
 	        $( ".navigation" ).removeClass('fixed');
 	    }
 	});	

@@ -14,7 +14,7 @@
 }
 /* line 18, ../sass/activities.scss */
 .page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-wrapper {
-  height: 200px;
+  height: 300px;
   top: 0px;
   margin: 0;
   left: 15px;
@@ -29,7 +29,7 @@
 /* line 30, ../sass/activities.scss */
 .page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-content {
   padding: 0;
-  min-height: 200px;
+  min-height: 300px;
   width: 100%;
   text-align: center;
 }
