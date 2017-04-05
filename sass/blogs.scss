@@ -61,15 +61,41 @@
 .single-post{
 	#page.blog{
 		header{
-			padding:55px 100px;
+			padding:120px 100px 15px;
 			margin-bottom:40px;
 			h1{
-				font-size:50px;
+				font-size:60px;
+			}			
+			p{
+				display: inline-block;
 			}
+			.author{
+				margin-top:45px;
+				display: inline-block;
+				text-align: left;			
+				.author-image{
+					margin-right:15px;
+					float:left;
+					width:80px;
+					height:80px;
+					img.alignnone{
+						width:80px;
+						@include border-radius(40px);
+						box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+					}					
+				}
+			}
+
 		}
+
+		figure img{
+			width:100%;
+			height:auto;
+			margin-bottom:20px;
+		}		
 		iframe{
 			max-width:100%;
 			// height:50%;
-		}	
+		}
 	}
 }

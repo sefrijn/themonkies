@@ -1,17 +1,17 @@
 <?php
-/**
- * @package Sefrijn
+/*
+ * Template Name: Basic
  */
 
 	get_header('pages');
 ?>
-<div id="page" class="blog wrapper">
+<div id="page">
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if ( has_post_thumbnail() ) { ?>
 				<div class="container">
 					<div class="row">
-						<header class="col-md-12" style="<?php if ( has_post_thumbnail() ) { ?>
+						<header class="col-md-8 col-md-offset-2" style="<?php if ( has_post_thumbnail() ) { ?>
 								<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
 								if ($post_image_id) {
 									$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
@@ -29,37 +29,21 @@
 							<h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
 							<p class="subtitle"><?php $meta_values = get_post_meta( get_the_ID(), 'subtitle', true ); 
 							_e($meta_values); ?></p>
-							<div class="author">
-								<div class="author-image">
-									<?php echo get_wp_user_avatar(get_the_author_meta('ID'), 'thumbnail'); ?>
-								</div>
-								<p><?php the_date(); ?><br>
-								<?php the_author(); ?></p>
-							</div>
 						</header>
 					</div>					
 				</div>
-
-
-
-
 			<?php } else { ?>
+			<section class="spacer"></section>
 			<?php } ?>
-
-			<script>
-				$( document ).ready(function() {
-					$('.navigation ul li:nth-of-type(5)').addClass('current-menu-item');
-				});
-			</script>
 
 
 			<section class="wrapper">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<?php the_content(); ?>					
-						</div>
-					</div>
+					<!-- <div class="row"> -->
+						<!-- <div class="col-md-8 col-md-offset-2"> -->
+							<?php the_content(); ?>	
+						<!-- </div> -->
+					<!-- </div> -->
 				</div>
 			</section>
 		<?php endwhile; ?>

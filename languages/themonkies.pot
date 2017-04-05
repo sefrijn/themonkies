@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Monkies 1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/themonkies\n"
-"POT-Creation-Date: 2017-03-09 18:12:45+00:00\n"
+"POT-Creation-Date: 2017-04-04 16:51:43+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,28 +12,59 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: functions.php:17
+#: functions.php:39
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:18
+#: functions.php:40
 msgid "Footer Menu"
 msgstr ""
 
-#: index.php:9
+#: index.php:18
+msgid "onze thema&apos;s"
+msgstr ""
+
+#: index.php:73
+msgid "Lees meer over onze visie"
+msgstr ""
+
+#: index.php:79
 msgid "wat doen we?"
 msgstr ""
 
-#: index.php:106
+#: index.php:135
+msgid "Bekijk wat wij doen"
+msgstr ""
+
+#: index.php:147
+msgid "events"
+msgstr ""
+
+#: index.php:154
+msgid "blog"
+msgstr ""
+
+#: index.php:178
 msgid "Bekijk Alles"
 msgstr ""
 
-#: index.php:115
+#: index.php:187
 msgid "onze lieve monkies"
 msgstr ""
 
-#: index.php:152
+#: index.php:224
 msgid "bezoek ons!"
+msgstr ""
+
+#: index.php:225
+msgid ""
+"The Monkies kan je vinden op verschillende locaties. Onze hoofdlocatie zit "
+"op dit moment in Schiedam, waar we mooie activtietein organiseren in een "
+"prachtig pand."
+msgstr ""
+
+#: index.php:226
+msgid "Lees meer"
 msgstr ""
 
 #: tribe-events/list/single-event.php:87
@@ -52,9 +83,9 @@ msgstr ""
 msgid "The Monkies"
 msgstr ""
 
-#. #-#-#-#-#  themonkies.pot (The Monkies 1.1)  #-#-#-#-#
+#. #-#-#-#-#  themonkies2.pot (The Monkies 1.1)  #-#-#-#-#
 #. Theme URI of the plugin/theme
-#. #-#-#-#-#  themonkies.pot (The Monkies 1.1)  #-#-#-#-#
+#. #-#-#-#-#  themonkies2.pot (The Monkies 1.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "http://www.sefrijn.nl/"
 msgstr ""
@@ -72,7 +103,23 @@ msgid "Archive"
 msgstr ""
 
 #. Template Name of the plugin/theme
+msgid "Activities"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Basic"
+msgstr ""
+
+#. Template Name of the plugin/theme
 msgid "Blog"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Locations"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Monkie Single"
 msgstr ""
 
 #. Template Name of the plugin/theme

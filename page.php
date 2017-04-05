@@ -11,7 +11,7 @@
 			<?php if ( has_post_thumbnail() ) { ?>
 				<div class="container">
 					<div class="row">
-						<header class="col-md-8 col-md-offset-2" style="<?php if ( has_post_thumbnail() ) { ?>
+						<header class="col-md-12" style="<?php if ( has_post_thumbnail() ) { ?>
 								<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
 								if ($post_image_id) {
 									$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);

@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+<?php if(function_exists("pll_get_post")){
+	if(pll_current_language() == 'en'){ ?>
+
+	<div class="alert alert-warning alert-dismissible container" role="alert">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <strong>Under Construction!</strong><br>Our English part of the site is still very much under construction. Some events are missing, some text is incomplete.
+	</div>
+	<?php } ?>
+<?php } ?>
+
 <div id="home" class="wrapper">
 
 
@@ -60,7 +70,7 @@
 			?>
 		</div>
 		<div class="vision-read-more">
-			<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('Lees meer over onze visie') ?></a>
+			<a href="<?php echo get_the_permalink(pll_get_post($page_ID)); ?>"><?php _e('Lees meer over onze visie', 'themonkies') ?></a>
 		</div>	
 	</div>
 
@@ -122,7 +132,7 @@
 			?>
 		</div>
 		<div class="activities-read-more">
-			<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('Bekijk wat wij doen') ?></a>
+			<a href="<?php echo get_the_permalink(pll_get_post($page_ID)); ?>"><?php _e('Bekijk wat wij doen', 'themonkies') ?></a>
 		</div>	
 	</div>
 
@@ -134,14 +144,14 @@
 <!-- EVENTS -->
 
 			<div id="events" class="col-md-6">
-				<h1>events</h1>
+				<h1><?php _e('events', 'themonkies') ?></h1>
 				<?php dynamic_sidebar( 'events_widget' ); ?>
 			</div>
 
 <!-- BLOG -->
 
 			<div id="blog" class="col-md-6">
-				<h1>blog</h1>
+				<h1><?php _e('blog', 'themonkies') ?></h1>
 				<?php
 					// Get the blogs
 					$args=array(
@@ -165,7 +175,7 @@
 						endwhile;
 					}
 				?>
-				<a href="#" class="button"><?php echo __("Bekijk Alles") ?></a>		
+				<a href="<?php echo get_the_permalink(pll_get_post(get_ID_by_slug("blog"))); ?>" class="button"><?php _e('Bekijk Alles', 'themonkies') ?></a>		
 			</div>
 		</div>
 	</div>
@@ -174,7 +184,7 @@
 
 	<div id="monkies" class="container">
 		<div class="row">
-			<h1><?php echo __("onze lieve monkies"); ?></h1>
+			<h1><?php _e("onze lieve monkies"); ?></h1>
 			<?php
 				// Get the monkie child pages
 				$args=array(
@@ -198,15 +208,10 @@
 						<?php
 					endwhile;
 				}else{
-					echo "no content";
+					echo "Oh my gawd!! No Monkies were found in the database!";
 				}
 			?>
-			<?php
-				$page_ID = get_ID_by_slug('monkies');
-				$post_url = get_permalink($page_ID);
-			?>
-
-			<a class="col-md-2 col-sm-4 col-xs-6 monkie" href="<?php echo $post_url; ?>">
+			<a class="col-md-2 col-sm-4 col-xs-6 monkie" href="<?php echo get_the_permalink(pll_get_post(get_ID_by_slug('monkies'))); ?>">
 				<img class="attachment-news-thumb" src="<?php echo get_template_directory_uri(); ?>/img/more_monkies_small.jpg" alt="">
 				<h2>En meer!</h2>
 			</a>
@@ -217,9 +222,8 @@
 
 	<div id="location" class="container">
 		<h1><?php echo __("bezoek ons!") ?></h1>
-		<p><?php _e('The Monkies kan je vinden op verschillende locaties. Onze hoofdlocatie zit op dit moment in Schiedam, waar we mooie activtietein organiseren in een prachtig pand.') ?></p>
-		<?php $page_ID = get_ID_by_slug('locaties'); ?>
-		<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('Lees meer') ?></a>
+		<p><?php _e('The Monkies kan je vinden op verschillende locaties. Onze hoofdlocatie zit op dit moment in Schiedam, waar we mooie activtietein organiseren in een prachtig pand.', 'themonkies') ?></p>
+		<a href="<?php echo get_the_permalink(pll_get_post(get_ID_by_slug('locaties'))); ?>"><?php _e('Lees meer', 'themonkies') ?></a>
 	</div>
 </div>
 <?php get_footer() ?>

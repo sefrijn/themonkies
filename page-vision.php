@@ -8,7 +8,11 @@
 <div id="vision" class="wrapper">
 	<div id="vision-overview" class="container">
 		<h2 class="page-title">onze visie</h2>
-
+		<div class="vision-introduction row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+				<?php the_content(); ?>
+			</div>
+		</div>
 		<div class="vision-elements-wrapper row">
 			<?php
 				// Get the Vision child pages
@@ -67,7 +71,7 @@
 					<a class="anchor" id="<?php echo $post->post_name; ?>"></a>
 						<h1><?php the_title(); ?></h1>
 						<div class="row image">
-							<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3" style="
+							<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" style="
 								<?php if ( has_post_thumbnail($page->ID) ) { ?>
 									<?php $post_image_id = get_post_thumbnail_id($page->ID);
 									if ($post_image_id) {
@@ -82,7 +86,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="first-section col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+							<div class="first-section col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
 								<?php the_content(''); ?>
 							</div>
 							<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
