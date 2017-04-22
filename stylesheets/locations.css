@@ -1,18 +1,22 @@
-/* line 5, ../sass/locations.scss */
+/* line 4, ../sass/locations.scss */
+.page-template-page-locations #locations {
+  padding-bottom: 30px;
+}
+/* line 6, ../sass/locations.scss */
 .page-template-page-locations #locations h2 {
   text-align: center;
 }
-/* line 9, ../sass/locations.scss */
+/* line 10, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper {
   margin: 0 -30px;
 }
-/* line 11, ../sass/locations.scss */
+/* line 12, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element {
   margin-bottom: 20px;
   text-decoration: none;
   display: block;
 }
-/* line 15, ../sass/locations.scss */
+/* line 16, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-wrapper {
   height: 200px;
   top: 0px;
@@ -20,20 +24,20 @@
   left: 15px;
   right: 15px;
 }
-/* line 21, ../sass/locations.scss */
+/* line 22, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-wrapper .item-image, .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-wrapper .item-image-blur {
   top: 0px;
   bottom: 0px;
   width: 100%;
 }
-/* line 27, ../sass/locations.scss */
+/* line 28, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content {
   padding: 0;
   min-height: 200px;
   width: 100%;
   text-align: center;
 }
-/* line 32, ../sass/locations.scss */
+/* line 33, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content .vertical-center {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
@@ -42,7 +46,7 @@
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 33, ../sass/locations.scss */
+/* line 34, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content .vertical-center h2 {
   font-size: 25px;
   -moz-transition-duration: 0.2s;
@@ -50,54 +54,54 @@
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 36, ../sass/locations.scss */
+/* line 37, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content .vertical-center h2 span.subtitle {
   font-family: 'Open Sans';
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 16px;
 }
-/* line 50, ../sass/locations.scss */
+/* line 51, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element:hover .item-image-content .vertical-center {
   box-shadow: 0 4px 0 #4ebf3f;
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 53, ../sass/locations.scss */
+/* line 54, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-elements-wrapper .locations-element:hover .item-image-content .vertical-center h2 {
   -moz-transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
-/* line 64, ../sass/locations.scss */
+/* line 65, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-detail {
   margin-top: 40px;
 }
-/* line 66, ../sass/locations.scss */
+/* line 67, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-detail .image {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  /* line 66, ../sass/locations.scss */
+  /* line 67, ../sass/locations.scss */
   .page-template-page-locations #locations .locations-detail .image {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-/* line 72, ../sass/locations.scss */
+/* line 73, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-detail .image div {
   height: 300px;
 }
-/* line 79, ../sass/locations.scss */
+/* line 80, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-detail h1 {
   text-align: center;
   font-size: 55px;
 }
-/* line 84, ../sass/locations.scss */
+/* line 85, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-detail p {
   font-size: 16px;
 }
-/* line 89, ../sass/locations.scss */
+/* line 90, ../sass/locations.scss */
 .page-template-page-locations #locations .locations-detail .first-section p {
   font-size: 21px;
   font-weight: 300;

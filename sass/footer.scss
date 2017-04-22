@@ -10,3 +10,72 @@ footer{
 	color:#aaaaaa;	
 	text-align: center;
 }
+
+#event-mini{
+	// border-bottom:1px solid #ddd;
+	padding: 30px 0px;
+	font-size:15px;
+	background-color: white;
+	box-shadow:0 15px 15px -10px rgba(0,0,0,0.08);
+
+	@media screen and (max-width: 768px){
+		padding:30px 30px;
+	}
+
+	span{
+		color:#999;
+	}
+	a:hover span{
+		color:$highlight;
+	}
+	h3{
+		margin:0;
+		font-size: 24px;
+		// text-align: center;		
+	}
+
+}
+
+#instagram{
+	background-color:#eee;
+	padding-bottom:30px;
+	.sb_instagram_header{
+		text-align: center;	
+		padding:15px 15px 0 !important;
+		margin-bottom:-20px;	
+		.sbi_header_link{
+			float:none;
+			display: inline-block;
+			h3.sbi_no_bio{
+				font-size: 30px;
+				text-align: center;
+				margin-bottom: -15px;
+				padding-top:0 !important;
+			}
+		}
+	}
+	#sb_instagram{
+		.sbi_follow_btn a{
+			display:inline-block;
+			border:1px solid #ddd;
+			padding:10px 15px;
+			text-decoration: none;
+			background-color: transparent;
+			border-radius: 0px;
+			color:#000;
+			font-size:16px;
+			margin-top:-15px;
+			&:hover{
+				background-color:$highlight;
+				color:white;
+				border-color:$highlight;
+				text-decoration: none;
+			}			
+		}
+		#sbi_images{
+			// width:inherit;
+			// left:-30px;
+			// right:-30px;
+		}
+	}
+}

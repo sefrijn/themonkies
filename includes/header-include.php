@@ -17,7 +17,25 @@
 <link rel="image_src" href="<?php echo get_template_directory_uri(); ?>/img/sefrijn_square.png" />
 
 <?php 
-  if ( is_admin_bar_showing() ) echo '<style>.navigation{top:259px !important;} .fixed{top:32px !important;}</style>'; 
+  if ( is_admin_bar_showing() ) echo '
+  	<style>
+		@media screen and (min-width: 601px){
+			.navigation{
+				top:273px !important;
+			}
+			.fixed{
+				top:46px !important;
+			}
+		}
+		@media screen and (min-width: 783px){
+			.navigation{
+				top:259px !important;
+			}
+			.fixed{
+				top:32px !important;
+			}
+		}
+	</style>'; 
 ?>
 <?php wp_head(); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">	

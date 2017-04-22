@@ -144,7 +144,7 @@
 <!-- EVENTS -->
 
 			<div id="events" class="col-md-6">
-				<h1><?php _e('events', 'themonkies') ?></h1>
+				<h1><?php _e('agenda', 'themonkies') ?></h1>
 				<?php dynamic_sidebar( 'events_widget' ); ?>
 			</div>
 
@@ -187,12 +187,14 @@
 			<h1><?php _e("onze lieve monkies"); ?></h1>
 			<?php
 				// Get the monkie child pages
+				$page_ID = get_ID_by_slug('monkies');			
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
-				  'post_parent' => 15,
+				  'post_parent' => $page_ID,
 				  'posts_per_page' => 5,
-				  'order' => 'ASC'
+				  'orderby' => 'menu_order',				  
+				  'order' => 'DESC'
 				  );
 				$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
@@ -217,6 +219,7 @@
 			</a>
 		</div>
 	</div>
+
 
 <!-- LOCATION -->
 

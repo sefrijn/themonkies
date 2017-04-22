@@ -107,7 +107,11 @@ if ( $posts ) : ?>
 	</ul><!-- .tribe-list-widget -->
 
 	<div class="tribe-events-widget-link">
-		<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" rel="bookmark"><?php printf( esc_html__( 'View All %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
+		<?php if(function_exists("pll_get_post")){ ?>
+			<a href="<?php echo pll_home_url($slug)."events"; ?>"  rel="bookmark"><?php printf( esc_html__( 'View All %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
+		<?php }else{ ?>
+			<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" rel="bookmark"><?php printf( esc_html__( 'View All %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
+		<?php } ?>
 	</div>
 
 <?php

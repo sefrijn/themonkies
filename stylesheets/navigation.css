@@ -107,22 +107,22 @@
     width: 100%;
     padding-left: 15px;
   }
-  /* line 95, ../sass/navigation.scss */
+  /* line 93, ../sass/navigation.scss */
   .navigation .container .menuicon {
     position: relative;
     top: 5px;
     margin-right: 15px;
   }
-  /* line 100, ../sass/navigation.scss */
+  /* line 98, ../sass/navigation.scss */
   .navigation .container h2 {
     display: inline-block;
     margin-top: 4px;
   }
-  /* line 104, ../sass/navigation.scss */
+  /* line 102, ../sass/navigation.scss */
   .navigation .container .menuicon-caption {
     display: inline-block;
   }
-  /* line 107, ../sass/navigation.scss */
+  /* line 105, ../sass/navigation.scss */
   .navigation .container .menu-wrapper {
     padding-left: 15px;
     position: absolute;
@@ -132,41 +132,45 @@
     width: 100%;
     z-index: 21;
   }
-  /* line 116, ../sass/navigation.scss */
+  /* line 114, ../sass/navigation.scss */
   .navigation .container .menu-wrapper ul {
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 5px;
+    padding-bottom: 20px;
   }
-  /* line 119, ../sass/navigation.scss */
+  /* line 118, ../sass/navigation.scss */
   .navigation .container .menu-wrapper ul li {
     display: block;
+    padding-top: 10px;
+    font-size: 20px;
   }
 }
 
-/* line 130, ../sass/navigation.scss */
+/* line 131, ../sass/navigation.scss */
 .fixed {
   position: fixed;
   top: 0px;
   z-index: 10;
   text-align: left;
+  background-color: white;
 }
-/* line 136, ../sass/navigation.scss */
+/* line 138, ../sass/navigation.scss */
 .fixed .container .logo {
   visibility: visible;
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
-  /* line 142, ../sass/navigation.scss */
+  /* line 144, ../sass/navigation.scss */
   .fixed .container .menu-wrapper > div {
     display: inline-block;
     position: relative;
     left: 170px;
   }
-  /* line 147, ../sass/navigation.scss */
+  /* line 149, ../sass/navigation.scss */
   .fixed .container .menu-wrapper ul {
     margin-left: 0;
   }
-  /* line 151, ../sass/navigation.scss */
+  /* line 153, ../sass/navigation.scss */
   .fixed .container h2 {
     display: inline-block;
     margin: 0;
@@ -175,23 +179,23 @@
     margin-right: 15px;
   }
 }
-/* line 159, ../sass/navigation.scss */
+/* line 161, ../sass/navigation.scss */
 .fixed .container .menuicon-caption {
   display: none;
 }
 
-/* line 167, ../sass/navigation.scss */
+/* line 169, ../sass/navigation.scss */
 .single-post .current-menu-item a {
   background-color: transparent !important;
   color: #555555 !important;
 }
-/* line 170, ../sass/navigation.scss */
+/* line 172, ../sass/navigation.scss */
 .single-post .current-menu-item a:hover {
   background-color: #4ebf3f;
   color: white;
 }
 
-/* line 176, ../sass/navigation.scss */
+/* line 178, ../sass/navigation.scss */
 .single-post .current-menu-item ~ li a {
   background-color: #4ebf3f;
   color: white !important;
