@@ -37,11 +37,11 @@ $event_id = get_the_ID();
 		?>
 		<?php } ?>
 	">
-	<h3>event</h3>
+	<h3><?php _e('evenement', 'themonkies') ?></h3>
 	<h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
 	<h2>
-		<?php echo tribe_get_start_date($post, false, $format = 'l, dS \of F' ); ?><br>
-		at <?php echo tribe_get_start_date($post, false, $format = 'G:i' ); ?>
+		<?php echo tribe_get_start_date($post, false ); ?><br>
+		<?php _e('om', 'themonkies') ?> <?php echo tribe_get_start_date($post, false, $format = 'G:i' ); ?>
 	</h2>
 	<?php // echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
 </header>
@@ -64,7 +64,7 @@ $event_id = get_the_ID();
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
 			<div class="col-md-7 tribe-events-content">
-				<h2>Description</h2>
+				<h2><?php _e('Beschrijving', 'themonkies') ?></h2>
 				<?php the_content(); ?>
 				<!-- .tribe-events-single-event-description -->
 				<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
