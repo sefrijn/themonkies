@@ -10,6 +10,7 @@
 <?php // Retrieve the next 3 upcoming events
 $events = tribe_get_events( array(
     'posts_per_page' => 3,
+    'start_date' => time(),
 ) );
 if(count($events) != 0){ ?>
 	<div id="event-mini" class="container">
