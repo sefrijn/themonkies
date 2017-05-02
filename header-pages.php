@@ -14,7 +14,7 @@
 				}
 				$myImage = $thumbnail;				
 			}else{
-				$myImage = "http://www.sefrijn.nl/wp-content/uploads/2015/02/IMG_0782-1024x472.jpg"; #TODO
+				$myImage = get_template_directory_uri()."/img/header.jpg"; #TODO
 			}
 		endwhile;
 	endif;
