@@ -275,7 +275,7 @@
 /* line 250, ../sass/home.scss */
 #home #location {
   color: white;
-  padding: 100px 25%;
+  padding: 100px 15%;
   text-align: center;
   margin-top: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/schiedam.jpg");
