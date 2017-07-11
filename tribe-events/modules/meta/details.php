@@ -80,7 +80,7 @@ $website = tribe_get_event_website_link();
 		elseif ( tribe_event_is_multiday() ) :
 			?>
 
-			<strong><?php esc_html_e( 'Start:', 'the-events-calendar' ) ?>
+			<strong><?php esc_html_e( 'Start:', 'the-events-calendar' ) ?></strong>
 			<div class="tribe-events-abbr updated published dtstart" title="<?php esc_attr_e( $start_ts ) ?>"> <?php esc_html_e( $start_datetime ) ?> </div>
 
 			<strong><?php esc_html_e( 'End:', 'the-events-calendar' ) ?></strong>
