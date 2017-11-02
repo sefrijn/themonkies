@@ -129,9 +129,17 @@ $website = tribe_get_event_website_link();
 		<?php
 		// Event Website
 		if ( ! empty( $website ) ) : ?>
-
+			<?php
+			$website_url = substr($website, strpos($website, '">')+2);
+			$website_url = substr($website_url, 0, strpos($website_url, '</a>'));
+			$website_name = $website_url;
+			if(strlen($website_name) > 35){
+				$website_name = substr($website_url,0,35);
+				$website_name = $website_name."...";
+			}
+			?>
 			<strong> <?php esc_html_e( 'Website:', 'the-events-calendar' ) ?> </strong>
-			<div class="tribe-events-event-url"> <?php echo $website; ?> </div>
+			<div class="tribe-events-event-url"> <a href="<?php echo $website_url; ?>"><?php echo $website_name; ?> </a></div>
 		<?php endif ?>
 
 		<?php do_action( 'tribe_events_single_meta_details_section_end' ) ?>

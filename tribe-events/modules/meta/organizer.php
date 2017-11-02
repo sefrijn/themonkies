@@ -65,7 +65,16 @@ $website = tribe_get_organizer_website_link();
 					<?php esc_html_e( 'Website:', 'the-events-calendar' ) ?>
 				</dt>
 				<dd class="tribe-organizer-url">
-					<?php echo $website; ?>
+					<?php
+					$website_url = substr($website, strpos($website, '">')+2);
+					$website_url = substr($website_url, 0, strpos($website_url, '</a>'));
+					$website_name = $website_url;
+					if(strlen($website_name) > 35){
+						$website_name = substr($website_url,0,35);
+						$website_name = $website_name."...";
+					}
+					?>
+					<a href="<?php echo $website_url; ?>"><?php echo $website_name; ?> </a>
 				</dd>
 				<?php
 			}//end if
