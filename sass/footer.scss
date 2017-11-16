@@ -1,6 +1,30 @@
 @import "base";
 @import "compass/css3";
 
+.mailchimp{
+	margin-bottom:25px;
+	margin-top:30px;
+	p{
+		font-size:16px;
+	}
+	label{
+		font-weight: 300;
+		font-size:16px;
+		// width:100px;
+		display: block;
+	}
+	input{
+		border:1px solid #eee;
+		margin-bottom:10px;
+	}
+	.mc-field-group{
+		display: inline-block;
+	}
+	.button{
+		@include border-radius(0);
+	}
+}
+
 // FOOTER
 footer{
 	padding:40px;

@@ -1,3 +1,49 @@
+<!-- Mailchimp -->
+<div class="container mailchimp">
+	<h4>Nieuwsbrief</h4>
+	<div class="row">
+		<div class="col-md-4">
+			<p>Wil je op de hoogte blijven van onze activiteiten? We sturen je maandelijks 1 nieuwsbrief met een overzicht. Je kan elk moment weer uitschrijven.</p>
+
+		</div>
+		<div class="col-md-8">
+
+			<!-- Begin MailChimp Signup Form -->
+			<p id="mc_embed_signup">
+				<form action="https://themonkies.us17.list-manage.com/subscribe/post?u=22ba3e8381c5fdbeb839f4469&amp;id=63623f644c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email adres  <span class="asterisk">*</span>
+							</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+						<div class="mc-field-group">
+							<label for="mce-FNAME">Voornaam </label>
+							<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+						</div>
+						<div class="mc-field-group">
+							<label for="mce-LNAME">Achternaam </label>
+							<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_22ba3e8381c5fdbeb839f4469_63623f644c" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="Inschrijven" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+			</p>
+			<!--End mc_embed_signup-->
+		</div>	
+
+	</div>
+</div>
+
+
+
+
 <!-- INSTAGRAM -->
 	<div id="instagram" class="container">
 		<div class="row">
